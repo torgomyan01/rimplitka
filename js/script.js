@@ -64,3 +64,14 @@ defaultInput.on('focus', function (){
     $(this).parent().addClass(active);
 })
 
+
+
+/* menu   */
+
+const menu_bars = document.querySelector('#menu-bars')
+const menu_item_mobile = document.querySelector('.menu-item-mobile')
+
+
+menu_bars.addEventListener('click', ()=>{
+    menu_item_mobile.classList.toggle('active')
+})
