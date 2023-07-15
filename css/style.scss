@@ -109,6 +109,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover{
+    background: #33b3dc;
+  }
 }
 
 
@@ -276,6 +279,9 @@ header{
         margin-top: 23px;
         img{
           margin-left: 10px;
+        }
+        &:hover{
+          background: #33b3dc;
         }
       }
     }

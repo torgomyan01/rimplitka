@@ -104,6 +104,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.btn-blue:hover {
+  background: #33b3dc;
+}
 
 .menu {
   position: fixed;
@@ -255,6 +258,9 @@ header .header-coontainer .header-info .btn-blue {
 }
 header .header-coontainer .header-info .btn-blue img {
   margin-left: 10px;
+}
+header .header-coontainer .header-info .btn-blue:hover {
+  background: #33b3dc;
 }
 header .header-coontainer .header-image {
   display: flex;
