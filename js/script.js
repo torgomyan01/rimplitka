@@ -71,7 +71,82 @@ defaultInput.on('focus', function (){
 const menu_bars = document.querySelector('#menu-bars')
 const menu_item_mobile = document.querySelector('.menu-item-mobile')
 
-
 menu_bars.addEventListener('click', ()=>{
     menu_item_mobile.classList.toggle('active')
 })
+
+
+
+// slider
+
+const slider_image = document.querySelectorAll('.slider-image')
+const slider_buttons = document.querySelector('.slider-buttons')
+const left_btn = document.querySelector('.left-btn')
+const right_btn = document.querySelector('.right-btn')
+
+slider_image.forEach((elem, index)=>{
+    const icons = document.createElement('div')
+    icons.classList.add('icons')
+    const icons_item = document.createElement('span')
+    icons_item.classList.add('icon-item')
+    icons.appendChild(icons_item)
+    slider_buttons.appendChild(icons)
+    if(index === 0){
+        elem.classList.add('active')
+        icons_item.classList.add('active')
+    }
+
+    if(index === slider_image.length -1){
+        startSlider()
+    }
+})
+
+function startSlider(){
+    const buttons_span = document.querySelectorAll('.icon-item')
+    buttons_span.forEach((elem,index)=>{
+        elem.addEventListener('click', ()=>{
+            buttons_span.forEach(elem => elem.classList.remove('active'))
+            elem.classList.add('active')
+            slider_image.forEach(elem => elem.classList.remove('active'))
+            slider_image[index].classList.add('active')
+        })
+    })
+}
+
+left_btn.addEventListener('click', ()=>{
+    ChangeSlider('minus')
+})
+
+right_btn.addEventListener('click', ()=>{
+    ChangeSlider('plus')
+})
+let num = 0
+
+
+function clearActive(){
+    const buttons_span = document.querySelectorAll('.icon-item')
+    buttons_span.forEach(elem =>{
+        if(elem.classList.contains('active')){
+            elem.classList.remove('active')
+            slider_image.forEach(elem => elem.classList.remove('active'))
+        }
+    })
+
+}
+
+
+function ChangeSlider(numStatus){
+    const buttons_span = document.querySelectorAll('.icon-item')
+
+    numStatus === 'plus' ? num++ : num--
+
+    if(num >= buttons_span.length){
+        num = 0
+    } else if(num < 0){
+        num = buttons_span.length-1
+    }
+    clearActive()
+    buttons_span[num].classList.add('active')
+    slider_image[num].classList.add('active')
+
+}

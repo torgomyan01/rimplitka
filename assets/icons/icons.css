@@ -64,6 +64,17 @@
 content: "\f1ec"
 }
 
+.fa-circle-chevron-left:before{
+content: "\f137"
+}
+
+.fa-circle-chevron-right:before{
+content: "\f138"
+}
+
+
+
+
 /*---------------------------------*/
 
 

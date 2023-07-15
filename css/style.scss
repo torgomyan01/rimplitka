@@ -295,9 +295,84 @@ header{
 
     .header-image {
       height: 800px;
+      position: relative;
       img{
         height: 800px !important;
       }
+
+
+      .slider-image{
+        transition: .3s;
+        display: none;
+        //clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        &.active{
+          display: initial;
+          //clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+      }
+
+
+      .slider-icon{
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+        align-items: center;
+        left: 55%;
+        transform: translateX(-55%);
+        @media (max-width: 1200px) {
+          left: 75%;
+        }
+
+        i{
+          font-size: 50px;
+          cursor: pointer;
+          color: #fff;
+          position: relative;
+          left: -250px;
+          @media (max-width: 1200px) {
+            left: -80px;
+          }
+          &:last-child{
+            left: 290px;
+            @media (max-width: 1200px) {
+              left: 100px;
+            }
+          }
+        }
+
+
+        .slider-buttons {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .icons {
+            margin-right: 10px;
+            background: #fff;
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:last-child{
+              margin-right: 0;
+            }
+            .icon-item {
+              border-radius: 50%;
+              width: 7px;
+              height: 7px;
+              display: block;
+              cursor: pointer;
+              &.active{
+                background: #42622F;
+              }
+            }
+          }
+        }
+
+      }
+
     }
 
 
