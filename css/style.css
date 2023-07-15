@@ -226,7 +226,7 @@ header .header-coontainer .header-info {
   z-index: 5;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(3px);
-  padding: 208px 50px 150px 122px;
+  padding: 190px 50px 150px 122px;
 }
 header .header-coontainer .header-info .title-blue {
   margin-top: 20px;
@@ -241,6 +241,10 @@ header .header-coontainer .header-info .contact-block div {
   font-weight: 300;
   line-height: normal;
   cursor: pointer;
+  margin-bottom: 20px;
+}
+header .header-coontainer .header-info .contact-block div:last-child {
+  margin-bottom: 0;
 }
 header .header-coontainer .header-info .contact-block div i {
   font-size: 26px;

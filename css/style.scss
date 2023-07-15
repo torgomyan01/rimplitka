@@ -244,7 +244,7 @@ header{
       z-index: 5;
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(3px);
-      padding: 208px 50px 150px 122px;
+      padding: 190px 50px 150px 122px;
 
       .title-blue{
         margin-top: 20px;
@@ -260,7 +260,10 @@ header{
           font-weight: 300;
           line-height: normal;
           cursor: pointer;
-
+          margin-bottom: 20px;
+          &:last-child{
+            margin-bottom: 0;
+          }
           i{
             font-size: 26px;
             margin-right: 12px;
