@@ -189,10 +189,13 @@ body {
 @media (max-width: 767px) {
   .menu .menu-bar .menu-item-mobile {
     display: initial;
+    z-index: 1000;
     position: absolute;
     left: 0;
     width: 100%;
     top: 100%;
+    height: 100vh;
+    border-radius: 10px;
     backdrop-filter: blur(6px);
     background: rgba(255, 255, 255, 0.85);
     clip-path: polygon(0 86%, 0 100%, 8% 100%, 0% 100%);
@@ -217,7 +220,9 @@ body {
 
 header .header-coontainer {
   position: relative;
-  min-height: 80vh;
+  min-height: 80vh !important;
+  display: flex;
+  justify-content: end;
 }
 header .header-coontainer .header-info {
   position: absolute;
@@ -263,8 +268,10 @@ header .header-coontainer .header-info .btn-blue:hover {
   background: #33b3dc;
 }
 header .header-coontainer .header-image {
-  display: flex;
-  justify-content: end;
+  height: 800px;
+}
+header .header-coontainer .header-image img {
+  height: 800px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
