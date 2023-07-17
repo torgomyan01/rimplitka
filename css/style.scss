@@ -253,7 +253,12 @@ header{
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(3px);
       padding: 190px 50px 150px 122px;
-
+      @media (max-width: 767px) {
+        padding: 150px 40px 110px 110px;
+      }
+      @media (max-width: 576px) {
+        padding: 120px 20px 60px 20px;
+      }
       .title-blue{
         margin-top: 20px;
       }
@@ -263,7 +268,7 @@ header{
 
         div{
           color: #176B87;
-          font-size: 20px;
+          font-size: 1.25rem;
           font-style: normal;
           font-weight: 300;
           line-height: normal;
@@ -319,8 +324,17 @@ header{
         align-items: center;
         left: 55%;
         transform: translateX(-55%);
+        @media (max-width: 1400px) {
+          left: 65%;
+        }
+        @media (max-width: 1280px) {
+          left: 70%;
+        }
         @media (max-width: 1200px) {
           left: 75%;
+        }
+        @media (max-width: 1100px) {
+          display: none;
         }
 
         i{
@@ -329,11 +343,23 @@ header{
           color: #fff;
           position: relative;
           left: -250px;
+          @media (max-width: 1400px) {
+            left: -120px;
+          }
+          @media (max-width: 1280px) {
+            left: -100px;
+          }
           @media (max-width: 1200px) {
             left: -80px;
           }
           &:last-child{
             left: 290px;
+            @media (max-width: 1400px) {
+              left: 200px;
+            }
+            @media (max-width: 1280px) {
+              left: 150px;
+            }
             @media (max-width: 1200px) {
               left: 100px;
             }
@@ -383,3 +409,90 @@ header{
 
 
 //............  header-end
+
+
+//.................. Cards
+
+.cards {
+  margin-top: 100px;
+  @media (max-width: 767px) {
+    margin-top: 60px;
+  }
+
+  .cards-container {
+
+    //.......Description
+
+    .cards-description{
+      position: relative;
+      padding-bottom: 60px;
+      @media (max-width: 576px) {
+
+      }
+      .heading{
+        text-align: center;
+      }
+
+      .title-blue{
+        text-align: center;
+      }
+
+      .title-dekctop{
+        @media (max-width: 576px) {
+          display: none;
+        }
+      }
+
+      .title-mobile{
+        display: none;
+        position: relative;
+        @media (max-width: 576px) {
+          display: block;
+        }
+      }
+
+      .title-mobile.text:after{
+        content: "";
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) -63.41%, #FFFFFF 100%);
+      }
+
+      #myBtn{
+        display: none;
+        color: #323232;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        background: none;
+        position: relative;
+        left: 50%;
+        top: -20px;
+        transform: translateX(-50%);
+        margin-top: 25px;
+        @media (max-width: 576px) {
+          display: block;
+        }
+      }
+
+      #more {display: none;}
+
+    }
+
+    // .......Description end
+
+
+
+
+
+    //..............Cards end
+
+
+  }
+
+}

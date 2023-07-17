@@ -139,7 +139,7 @@ function ChangeSlider(numStatus){
     const buttons_span = document.querySelectorAll('.icon-item')
 
     numStatus === 'plus' ? num++ : num--
-
+    console.log(num)
     if(num >= buttons_span.length){
         num = 0
     } else if(num < 0){
@@ -149,4 +149,46 @@ function ChangeSlider(numStatus){
     buttons_span[num].classList.add('active')
     slider_image[num].classList.add('active')
 
+}
+
+let plus = 'plus'
+
+setInterval(()=>{
+    const buttons_span = document.querySelectorAll('.icon-item')
+
+    num++
+    if(num >= buttons_span.length){
+        num = 0
+    } else if(num < 0){
+        num = buttons_span.length-1
+    }
+    clearActive()
+    buttons_span[num].classList.add('active')
+    slider_image[num].classList.add('active')
+
+},2000)
+
+
+// text
+
+const dots = document.getElementById("dots");
+const moreText = document.getElementById("more");
+const btnText = document.getElementById("myBtn");
+
+
+
+function myFunction() {
+    const title_mobile = document.querySelector('.title-mobile');
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Читать больше";
+        moreText.style.display = "none";
+        title_mobile.classList.add('text')
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Читать меньше";
+        moreText.style.display = "inline";
+        title_mobile.classList.remove('text')
+    }
 }
