@@ -14,21 +14,21 @@ const { mobileMenu, body, imageWidget } = {
     body: $('body'),
     imageWidget: $('.image-widget'),
 }
-
-AOS.init()
-
-$('.mobile-menu-board').on('click', function (){
-    const thisElem = $(this);
-    if(thisElem.hasClass(active)){
-        mobileMenu.removeClass(active)
-        thisElem.removeClass(active)
-        body.removeClass(hidden)
-    } else {
-        mobileMenu.addClass(active)
-        thisElem.addClass(active)
-        body.addClass(hidden)
-    }
-})
+//
+// AOS.init()
+//
+// $('.mobile-menu-board').on('click', function (){
+//     const thisElem = $(this);
+//     if(thisElem.hasClass(active)){
+//         mobileMenu.removeClass(active)
+//         thisElem.removeClass(active)
+//         body.removeClass(hidden)
+//     } else {
+//         mobileMenu.addClass(active)
+//         thisElem.addClass(active)
+//         body.addClass(hidden)
+//     }
+// })
 
 
 function clearActive(){
@@ -68,13 +68,21 @@ defaultInput.on('focus', function (){
 
 /* menu   */
 
-const menu_bars = document.querySelector('#menu-bars')
-const menu_item_mobile = document.querySelector('.menu-item-mobile')
+// const menu_bars = document.querySelector('#menu-bars')
+const menuItemMobile = $('.menu-item-mobile');
 
-menu_bars.addEventListener('click', ()=>{
-    menu_item_mobile.classList.toggle('active')
+// menu_bars.addEventListener('click', ()=>{
+//     menu_item_mobile.classList.toggle('active')
+// })
+$('.mobile-menu-board').on('click', function (){
+    if($(this).hasClass(active)){
+        $(this).removeClass(active);
+        menuItemMobile.removeClass(active);
+    } else {
+        $(this).addClass(active);
+        menuItemMobile.addClass(active);
+    }
 })
-
 
 
 // slider
