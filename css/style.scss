@@ -844,6 +844,12 @@ header{
   margin-top: 65px;
   min-height: 50vh;
   position: relative;
+  @media (max-width: 576px) {
+    min-height: 100vh;
+  }
+  .image{
+    height: 100%;
+  }
 
   .about-info{
     max-width: 811px;
@@ -854,13 +860,204 @@ header{
     top: 0;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
+    padding: 52px 30px 0 50px;
+    @media (max-width: 576px) {
+      padding: 52px 20px 0 20px;
+    }
+
+    .heading{
+      margin-bottom: 20px;
+      @media (max-width: 576px) {
+        text-align: center;
+      }
+    }
+
+    .title-blue{
+      margin-bottom: 20px;
+      @media (max-width: 576px) {
+        text-align: center;
+      }
+    }
+
+    .buttons{
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+
+      .btn-about{
+        @media (max-width: 576px) {
+          margin: 0 auto;
+        }
+      }
+    }
+
   }
 
-  .image{
-    height: 100%;
-  }
 
 }
 
 //........... About End.......
 
+
+//  ............ OutWork......
+
+  .outWork{
+    margin-top: 43px;
+    .outWork-container{
+
+      .heading{
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+
+        .slider{
+
+          .slick-track {
+              display: flex;
+            .slick-slide {
+              width: 223px !important;
+              height: 191px !important;
+              border-radius: 20px !important;
+              margin-right: 20px !important;
+              cursor: pointer;
+              @media (max-width: 767px) {
+                margin-right: 10px !important;
+              }
+              &:last-child {
+                margin-right: 0 !important;
+              }
+
+              img {
+                width: 100% !important;
+                border-radius: 20px !important;
+                height: 100% !important;
+                object-fit: cover !important;
+              }
+
+            }
+
+          }
+
+          .slick-dots{
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            li{
+              position: relative;
+              display: inline-block;
+              width: 14px;
+              height: 14px;
+              margin: 0 5px;
+              padding: 0;
+              background: rgba(23, 107, 135, 0.20);;
+              border-radius: 50%;
+              cursor: pointer;
+              &.slick-active{
+                background: #176B87;
+              }
+              button{
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 14px;
+                height: 14px;
+                padding: 5px;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: transparent;
+                &:before{
+                  opacity: .75;
+                  color: #FF6900;
+                }
+              }
+            }
+          }
+
+          .slick-dots li.slick-active button:before {
+            opacity: .75 !important;
+            color: #FF6900 !important;
+          }
+
+
+          .slick-prev{
+            background-color: #176B87 !important;
+            width: 60px !important;
+            height: 60px !important;
+            display: inline-block ;
+            position: absolute !important;
+            left: -30px!important;
+            top: 50% !important;
+            transform: translateY(-70%);
+            border-radius: 50% !important;
+            padding: 5px !important;
+            z-index: 32;
+            font-size: 0;
+            &:before{
+              content: '←';
+              font-family: 'slick';
+              font-size: 20px;
+              line-height: 1;
+              opacity: .75;
+              color: white;
+            }
+            @media (max-width: 1200px) {
+                left: -20px !important;
+            }
+            @media (max-width: 1024px) {
+             left: -12px !important;
+            }
+            @media (max-width: 768px) {
+             left: -10px !important;
+            }
+            @media (max-width: 425px) {
+              left: 0 !important;
+            }
+          }
+
+          .slick-next{
+            background-color: #176B87 !important;
+            width: 60px !important;
+            height: 60px !important;
+            display: inline-block ;
+            position: absolute;
+            top: 50% !important;
+            transform: translateY(-70%);
+            right: -30px;
+            border-radius: 50% !important;
+            padding: 5px !important;
+            font-size: 0;
+            &:before{
+              content: '→';
+              font-family: 'slick';
+              font-size: 20px;
+              line-height: 1;
+              opacity: .75;
+              color: white;
+            }
+            @media (max-width: 1200px) {
+              right: -20px;
+            }
+            @media (max-width: 1024px) {
+              right: -12px;
+            }
+            @media (max-width: 768px) {
+              right: -10px;
+            }
+            @media (max-width: 425px) {
+              right: 0;
+            }
+          }
+        }
+
+
+
+    }
+
+
+  }
+
+
+//............. OutWork end.......
