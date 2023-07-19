@@ -519,6 +519,11 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 @media (max-width: 576px) {
   .cards .cards-container .card .inner .image {
     margin-right: 0;
+    width: 100%;
+  }
+  .cards .cards-container .card .inner .image img {
+    object-fit: cover;
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
@@ -592,7 +597,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   bottom: 20px;
   right: 20px;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 16px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -608,20 +613,32 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 }
 .calculator .container-calculator .heading {
   text-align: center;
+  margin-bottom: 23px;
 }
 .calculator .container-calculator .calculator-background {
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background: #176B87;
   padding: 29px 23px;
+}
+@media (max-width: 576px) {
+  .calculator .container-calculator .calculator-background {
+    padding: 12px 10px;
+  }
 }
 .calculator .container-calculator .calculator-background .calculator-form {
   background: #fff;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   border: 1px solid #176B87;
-  padding: 20px 0px 57px 0;
+  padding: 1.25rem 0 4.375rem 0;
+}
+@media (max-width: 767px) {
+  .calculator .container-calculator .calculator-background .calculator-form {
+    padding: 1.25rem 0.625rem 1.875rem 0.625rem;
+  }
 }
 .calculator .container-calculator .calculator-background .calculator-form .calculator-title {
+  padding: 0 110px;
   color: #000;
   text-align: center;
   font-size: 20px;
@@ -629,14 +646,51 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   font-weight: 400;
   line-height: normal;
 }
+@media (max-width: 1100px) {
+  .calculator .container-calculator .calculator-background .calculator-form .calculator-title {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 767px) {
+  .calculator .container-calculator .calculator-background .calculator-form .calculator-title {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator .container-calculator .calculator-background .calculator-form .calculator-title {
+    padding: 0 5px;
+  }
+}
+@media (max-width: 370px) {
+  .calculator .container-calculator .calculator-background .calculator-form .calculator-title {
+    padding: 0;
+  }
+}
 .calculator .container-calculator .calculator-background .calculator-form .inner {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 1100px) {
+  .calculator .container-calculator .calculator-background .calculator-form .inner {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+}
 .calculator .container-calculator .calculator-background .calculator-form .inner .form {
   margin-right: 75px;
+}
+@media (max-width: 1100px) {
+  .calculator .container-calculator .calculator-background .calculator-form .inner .form {
+    margin-right: 0;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 576px) {
+  .calculator .container-calculator .calculator-background .calculator-form .inner .form {
+    width: 100%;
+  }
 }
 .calculator .container-calculator .calculator-background .calculator-form .inner .form .input-box {
   margin-bottom: 21px;
@@ -655,13 +709,38 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   width: 357px;
   padding: 10px;
   color: #333;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 .calculator .container-calculator .calculator-background .calculator-form .inner .form .input-box input::placeholder {
   color: #DFDBDB;
+}
+@media (max-width: 576px) {
+  .calculator .container-calculator .calculator-background .calculator-form .inner .form .input-box input {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .calculator .container-calculator .calculator-background .calculator-form .inner .form .buttons {
+    width: 100%;
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .calculator .container-calculator .calculator-background .calculator-form .inner .form .buttons .btn-form {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .calculator .container-calculator .calculator-background .calculator-form .inner .image {
+    width: 100%;
+  }
+  .calculator .container-calculator .calculator-background .calculator-form .inner .image img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
