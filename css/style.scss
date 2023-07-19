@@ -1061,3 +1061,66 @@ header{
 
 
 //............. OutWork end.......
+
+
+// ............  Payment
+
+.payment{
+  margin-top: 150px;
+  @media (max-width: 767px) {
+    margin-top: 75px;
+  }
+  .container-payment{
+
+    .heading{
+      text-align: center;
+    }
+
+    .inner{
+      display: flex;
+      margin-top: 44px;
+      @media (max-width: 767px) {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .image{
+        @media (max-width: 576px) {
+          width: 100%;
+        }
+        img{
+          @media (max-width: 576px) {
+            width: 100%;
+          }
+        }
+      }
+
+      .payment-info{
+        margin-left: 45px;
+        margin-bottom: 20px;
+        @media (max-width: 767px) {
+          margin-left: 0;
+          margin-top: 23px;
+        }
+        .title-blue{
+          margin-bottom: 2rem;
+        }
+
+        .buttons{
+          .btn-payment{
+            img{
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+
+}
+
+
+//................ Payment End

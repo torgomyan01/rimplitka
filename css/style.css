@@ -1015,4 +1015,52 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   }
 }
 
+.payment {
+  margin-top: 150px;
+}
+@media (max-width: 767px) {
+  .payment {
+    margin-top: 75px;
+  }
+}
+.payment .container-payment .heading {
+  text-align: center;
+}
+.payment .container-payment .inner {
+  display: flex;
+  margin-top: 44px;
+}
+@media (max-width: 767px) {
+  .payment .container-payment .inner {
+    display: block;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .payment .container-payment .inner .image {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .payment .container-payment .inner .image img {
+    width: 100%;
+  }
+}
+.payment .container-payment .inner .payment-info {
+  margin-left: 45px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .payment .container-payment .inner .payment-info {
+    margin-left: 0;
+    margin-top: 23px;
+  }
+}
+.payment .container-payment .inner .payment-info .title-blue {
+  margin-bottom: 2rem;
+}
+.payment .container-payment .inner .payment-info .buttons .btn-payment img {
+  margin-left: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
