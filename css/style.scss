@@ -32,6 +32,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;
+  scroll-behavior:smooth
 }
 
 a {
@@ -651,21 +652,25 @@ header{
               display: block;
               width: 100%;
             }
-            .btn-card{
-              color: #176B87;
-              background: #fff;
+            a{
               margin-right: 20px;
+              display: block;
               @media (max-width: 576px) {
-                margin-right: 0;
                 margin-bottom: 20px;
-                display: block;
-                width: 100%;
+                margin-right: 0;
                 &:last-child{
                   margin-bottom: 0;
                 }
               }
               &:last-child{
                 margin-right: 0;
+              }
+            }
+            .btn-card{
+              color: #176B87;
+              background: #fff;
+              @media (max-width: 576px) {
+                width: 100%;
               }
               &:hover{
                 background: #b5e1ec;
@@ -844,7 +849,7 @@ header{
   margin-top: 65px;
   min-height: 50vh;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
   @media (max-width: 576px) {
     min-height: 100vh;
   }
