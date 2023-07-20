@@ -312,6 +312,7 @@ header .header-coontainer {
   min-height: 80vh !important;
   display: flex;
   justify-content: end;
+  overflow-y: hidden;
 }
 header .header-coontainer .header-info {
   position: absolute;
@@ -808,6 +809,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   margin-top: 65px;
   min-height: 50vh;
   position: relative;
+  overflow-y: hidden;
 }
 @media (max-width: 576px) {
   .about {
@@ -1076,11 +1078,11 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   margin-bottom: 62px;
 }
 .work-etaps .work-etaps-container .work-etaps-item-last {
-  height: auto !important;
+  height: 1240px !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
   .work-etaps .work-etaps-container .work-etaps-item-last {
-    height: auto;
+    height: auto !important;
   }
 }
 .work-etaps .work-etaps-container .work-etaps-item {
@@ -1148,6 +1150,53 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   .work-etaps .work-etaps-container .work-etaps-item p {
     padding: 0 15px;
   }
+}
+
+.calculation .container-calculation .heading {
+  text-align: center;
+}
+.calculation .container-calculation .subtitle {
+  color: #323232;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.map {
+  margin-top: 82px;
+}
+@media (max-width: 767px) {
+  .map {
+    margin-top: 75px;
+  }
+}
+.map .heading {
+  text-align: center;
+  margin-bottom: 41px;
+}
+.map .container-map {
+  min-height: 70vh;
+  position: relative;
+}
+.map .container-map .contact {
+  max-width: 747px;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 107, 135, 0.7);
+  backdrop-filter: blur(5px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+.map .container-map .inner .contacts-mobile {
+  display: none;
+}
+.map .container-map .inner .map-yandex {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
