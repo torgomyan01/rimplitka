@@ -110,22 +110,18 @@ body {
   background: #33b3dc;
 }
 
-.modal-content .modal-header {
-  border: none;
-}
-.modal-content .modal-body {
-  width: 100% !important;
-  padding: 0 30px 40px 30px;
-  text-align: center;
-}
-
-.modal-dialog {
+.modal-dialog-form {
   max-width: 867px;
 }
-.modal-dialog .modal-form {
+.modal-dialog-form .modal-form {
   width: 100%;
+  padding: 0 0 40px 0;
+  text-align: center;
 }
-.modal-dialog .modal-form .modal-body .modal-form-heading {
+.modal-dialog-form .modal-form .modal-header {
+  border: none;
+}
+.modal-dialog-form .modal-form .modal-body-form .modal-form-heading {
   color: #000;
   text-align: center;
   font-size: 1.5625rem;
@@ -135,7 +131,7 @@ body {
   letter-spacing: 0.5px;
   margin-bottom: 10px;
 }
-.modal-dialog .modal-form .modal-body .modal-form-title {
+.modal-dialog-form .modal-form .modal-body-form .modal-form-title {
   color: #000;
   text-align: center;
   font-size: 1.25rem;
@@ -144,11 +140,11 @@ body {
   line-height: normal;
   letter-spacing: 0.4px;
 }
-.modal-dialog .modal-form .modal-body .input-box {
+.modal-dialog-form .modal-form .modal-body-form .input-box {
   margin-bottom: 21px;
   width: 100%;
 }
-.modal-dialog .modal-form .modal-body .input-box span {
+.modal-dialog-form .modal-form .modal-body-form .input-box span {
   color: #323232;
   font-size: 1.25rem;
   font-weight: 400;
@@ -157,7 +153,7 @@ body {
   margin-bottom: 10px;
   display: block;
 }
-.modal-dialog .modal-form .modal-body .input-box input {
+.modal-dialog-form .modal-form .modal-body-form .input-box input {
   width: 100%;
   border-radius: 5px;
   border: 1px solid #176B87;
@@ -167,13 +163,29 @@ body {
   font-weight: 400;
   line-height: normal;
 }
-.modal-dialog .modal-form .modal-body .input-box input::placeholder {
+.modal-dialog-form .modal-form .modal-body-form .input-box input::placeholder {
   color: #DFDBDB;
 }
 @media (max-width: 576px) {
-  .modal-dialog .modal-form .modal-body .input-box input {
+  .modal-dialog-form .modal-form .modal-body-form .input-box input {
     width: 100%;
   }
+}
+
+.modal-full-dialog {
+  background: #fff;
+}
+.modal-full-dialog .modal-full-content .modal-header {
+  border: none;
+}
+.modal-full-dialog .modal-full-content .modal-body-full {
+  margin: 0 auto;
+}
+.modal-full-dialog .modal-full-content .modal-body-full .modal-heading {
+  color: #000;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .mobile-menu-board {

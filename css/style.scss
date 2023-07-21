@@ -115,24 +115,20 @@ body {
   }
 }
 
-.modal-content {
-  .modal-header {
-    border: none;
-  }
 
-  .modal-body {
-    width: 100% !important;
-    padding: 0 30px 40px 30px;
-    text-align: center;
-  }
-}
 
-.modal-dialog {
+
+.modal-dialog-form {
     max-width: 867px;
-  .modal-form {
-   width: 100%;
 
-    .modal-body {
+  .modal-form {
+    width: 100% ;
+    padding: 0 0 40px 0;
+    text-align: center;
+    .modal-header {
+      border: none;
+    }
+    .modal-body-form {
 
       .modal-form-heading {
         color: #000;
@@ -191,6 +187,30 @@ body {
     }
   }
 }
+
+.modal-full-dialog{
+  background: #fff;
+
+  .modal-full-content{
+
+    .modal-header{
+      border: none;
+    }
+
+    .modal-body-full{
+      margin: 0 auto;
+      .modal-heading{
+        color: #000;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 400;
+      }
+
+    }
+
+  }
+
+  }
 
 
 
