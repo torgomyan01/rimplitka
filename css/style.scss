@@ -198,14 +198,107 @@ body {
     }
 
     .modal-body-full{
-      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
       .modal-heading{
         color: #000;
         font-size: 3rem;
         font-style: normal;
         font-weight: 400;
+        margin-bottom: 35px;
       }
+      .accordion{
+        max-width: 1196px !important;
+        width: 100% !important;
 
+        .accordion-item{
+          border-radius: 3px !important;
+          border: 1px solid rgba(0, 0, 0, 0.15) !important;
+          background: #FFF !important;
+          margin-bottom: 15px !important;
+
+          .accordion-header{
+
+            .accordion-button{
+              .btn-img{
+                color: #323232;
+                font-size: 1.375rem;
+                font-weight: 700;
+                line-height: normal;
+                display: flex;
+                align-items: center;
+                img{
+                  margin-right: 20px;
+                }
+              }
+
+            }
+
+          }
+
+          .accordion-body{
+
+            .inner{
+
+              .box{
+                margin-bottom: 25px;
+                .box-title{
+                  color: #323232;
+                  font-size: 1.125rem;
+                  font-weight: 700;
+                  line-height: normal;
+                }
+
+                .box-sub-title{
+                  display: block;
+                  color: #323232;
+                  font-size: 1rem;
+                  font-weight: 400;
+                  line-height: normal;
+                }
+                &:last-child{
+                  margin-bottom: 0;
+                }
+              }
+
+              .buttons{
+                display: flex;
+                @media (max-width: 425px) {
+                    display: block;
+                  width: 100%;
+                }
+                .btn-blue{
+                  @media (max-width: 425px) {
+                    display: block;
+                    width: 100%;
+                  }
+                  img{
+                    margin-left: 10px;
+                  }
+                }
+                .btn-green{
+                  margin-right: 20px;
+                  background: #4BCA1E;
+                  @media (max-width: 425px) {
+                    margin-bottom: 20px;
+                  }
+                  img{
+                    margin: 0;
+                    margin-right: 10px;
+                  }
+                  &:hover{
+                    background: #4a8a35;
+                  }
+                }
+              }
+            }
+
+          }
+
+        }
+
+      }
     }
 
   }
