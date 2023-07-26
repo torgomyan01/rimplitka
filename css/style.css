@@ -975,6 +975,11 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 }
 @media (max-width: 576px) {
   .about {
+    min-height: 75vh;
+  }
+}
+@media (max-width: 375px) {
+  .about {
     min-height: 100vh;
   }
 }

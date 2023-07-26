@@ -1042,6 +1042,9 @@ header{
   position: relative;
   overflow: hidden;
   @media (max-width: 576px) {
+    min-height: 75vh;
+  }
+  @media (max-width: 375px) {
     min-height: 100vh;
   }
   .image{
@@ -1661,3 +1664,8 @@ footer{
 }
 
 //............Footer end .....
+
+
+
+//.... Modal full
+

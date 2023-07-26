@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="css/photoviewer.css" rel="stylesheet" />
 
   <!--  STYLES  -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -24,6 +25,8 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/aos.js"></script>
+  <script src="js/photoviewer.js"></script>
+
 
 
   <title>RimPlitka</title>
@@ -178,12 +181,12 @@
            которые будут вызывать восхищение у всех, кто их увидит.
          </p>
          <div class="buttons">
-           <a href="#calculation">
+           <a href="#calculator">
              <button class="btn-blue btn-card">Калькулятор
                <img src="assets/image/calculator-blue.svg" alt="calc">
              </button>
            </a>
-           <a href="#calculation">
+           <a class="modal-open-full" href="#Vibropressed_paving_slabs" >
              <button class="btn-blue btn-card">смотреть
                <img src="assets/image/eye.svg" alt="eye">
              </button>
@@ -208,13 +211,14 @@
            восхитительные пространства на вашей территории.
          </p>
          <div class="buttons">
-           <a href="#calculation">
+           <a href="#calculator">
              <button class="btn-blue btn-card">Калькулятор
                <img src="assets/image/calculator-blue.svg" alt="calc">
              </button>
            </a>
-           <a href="#calculation">
-             <button class="btn-blue btn-card">смотреть
+           <a class="modal-open-full" href="#Paving_slabs_vibrocasting">
+             <button class="btn-blue btn-card">
+               смотреть
                <img src="assets/image/eye.svg" alt="eye">
              </button>
            </a>
@@ -238,13 +242,15 @@
            которые олицетворяют вашу индивидуальность и эстетический вкус.
          </p>
          <div class="buttons">
-           <a href="#calculation">
+           <a href="#calculator">
              <button class="btn-blue btn-card">Калькулятор
                <img src="assets/image/calculator-blue.svg" alt="calc">
              </button>
            </a>
-           <a href="#calculation">
-             <button class="btn-blue btn-card">смотреть <img src="assets/image/eye.svg" alt="eye"></button>
+           <a class="modal-open-full"  href="#Facing_stone">
+             <button class="btn-blue btn-card">смотреть
+               <img src="assets/image/eye.svg" alt="eye">
+             </button>
            </a>
          </div>
        </div>
@@ -267,11 +273,15 @@
            которые олицетворяют вашу индивидуальность и эстетический вкус.
          </p>
          <div class="buttons">
-           <a href="#calculation">
-             <button class="btn-blue btn-card">Калькулятор <img src="assets/image/calculator-blue.svg" alt="calc"></button>
+           <a href="#calculator">
+             <button class="btn-blue btn-card">Калькулятор
+               <img src="assets/image/calculator-blue.svg" alt="calc">
+             </button>
            </a>
-           <a href="#calculation">
-             <button class="btn-blue btn-card">смотреть <img src="assets/image/eye.svg" alt="eye"></button>
+           <a class="modal-open-full" href="#curbstone">
+             <button class="btn-blue btn-card">смотреть
+               <img src="assets/image/eye.svg" alt="eye">
+             </button>
            </a>
          </div>
        </div>
@@ -293,11 +303,15 @@
            бетонные ступени, которые прекрасно дополнят ваш дом или офис.
          </p>
          <div class="buttons">
-           <a href="#calculation">
-             <button class="btn-blue btn-card">Калькулятор <img src="assets/image/calculator-blue.svg" alt="calc"></button>
+           <a href="#calculator">
+             <button class="btn-blue btn-card">Калькулятор
+               <img src="assets/image/calculator-blue.svg" alt="calc">
+             </button>
            </a>
-           <a href="#calculation">
-             <button class="btn-blue btn-card">смотреть <img src="assets/image/eye.svg" alt="eye"></button>
+           <a class="modal-open-full" href="#Concrete_steps">
+             <button class="btn-blue btn-card">смотреть
+               <img src="assets/image/eye.svg" alt="eye">
+             </button>
            </a>
          </div>
        </div>
@@ -320,11 +334,15 @@
            и колпаки, которые придают элегантность и защиту вашим объектам.
          </p>
          <div class="buttons">
-           <a href="#calculation">
-             <button class="btn-blue btn-card">Калькулятор <img src="assets/image/calculator-blue.svg" alt="calc"></button>
+           <a href="#calculator">
+             <button class="btn-blue btn-card">Калькулятор
+               <img src="assets/image/calculator-blue.svg" alt="calc">
+             </button>
            </a>
-           <a href="#calculation">
-             <button class="btn-blue btn-card">смотреть <img src="assets/image/eye.svg" alt="eye"></button>
+           <a class="modal-open-full" href="#Caps_And_Caps" >
+             <button class="btn-blue btn-card">смотреть
+               <img src="assets/image/eye.svg" alt="eye">
+             </button>
            </a>
          </div>
        </div>
@@ -432,41 +450,45 @@
       <h2 class="heading">Наши работы</h2>
 
       <div class="slider">
-        <div><img src="assets/image/slider1.png" alt="slider"></div>
-        <div><img src="assets/image/slider2.png" alt="slider"></div>
-        <div><img src="assets/image/slider3.png" alt="slider"></div>
-        <div><img src="assets/image/slider4.png" alt="slider"></div>
-        <div><img src="assets/image/slider5.png" alt="slider"></div>
-        <div><img src="assets/image/slick6.jpeg" alt="slider"></div>
-        <div><img src="assets/image/slick7.jpeg" alt="slider"></div>
-        <div><img src="assets/image/slick8.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick9.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick10.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick11.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick12.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick10.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick11.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick12.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick13.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick14.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick16.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick17.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick18.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick19.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick20.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick21.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick22.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick23.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick24.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick25.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick26.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick27.jpg" alt="slider"></div>
-        <div><img src="assets/image/slick28.jpg" alt="slider"></div>
+        <a href="assets/image/slider1.png" class="gallery-photo"><img src="assets/image/slider1.png" alt="slider"></a>
+        <a href="assets/image/slider2.png" class="gallery-photo"><img src="assets/image/slider2.png" alt="slider"></a>
+        <a href="assets/image/slider3.png" class="gallery-photo"><img src="assets/image/slider3.png" alt="slider"></a>
+        <a href="assets/image/slider4.png" class="gallery-photo"><img src="assets/image/slider4.png" alt="slider"></a>
+        <a href="assets/image/slider5.png" class="gallery-photo"><img src="assets/image/slider5.png" alt="slider"></a>
+        <a href="assets/image/slick6.jpeg" class="gallery-photo"><img src="assets/image/slick6.jpeg" alt="slider"></a>
+        <a href="assets/image/slick7.jpeg" class="gallery-photo"><img src="assets/image/slick7.jpeg" alt="slider"></a>
+        <a href="assets/image/slick8.jpg" class="gallery-photo"><img src="assets/image/slick8.jpg" alt="slider"></a>
+        <a href="assets/image/slick9.jpg" class="gallery-photo"><img src="assets/image/slick9.jpg" alt="slider"></a>
+        <a href="assets/image/slick10.jpg" class="gallery-photo"><img src="assets/image/slick10.jpg" alt="slider"></a>
+        <a href="assets/image/slick11.jpg" class="gallery-photo"><img src="assets/image/slick11.jpg" alt="slider"></a>
+        <a href="assets/image/slick12.jpg" class="gallery-photo"><img src="assets/image/slick12.jpg" alt="slider"></a>
+        <a href="assets/image/slick10.jpg" class="gallery-photo"><img src="assets/image/slick10.jpg" alt="slider"></a>
+        <a href="assets/image/slick11.jpg" class="gallery-photo"><img src="assets/image/slick11.jpg" alt="slider"></a>
+        <a href="assets/image/slick12.jpg" class="gallery-photo"><img src="assets/image/slick12.jpg" alt="slider"></a>
+        <a href="assets/image/slick13.jpg" class="gallery-photo"><img src="assets/image/slick13.jpg" alt="slider"></a>
+        <a href="assets/image/slick14.jpg" class="gallery-photo"><img src="assets/image/slick14.jpg" alt="slider"></a>
+        <a href="assets/image/slick16.jpg" class="gallery-photo"><img src="assets/image/slick16.jpg" alt="slider"></a>
+        <a href="assets/image/slick17.jpg" class="gallery-photo"><img src="assets/image/slick17.jpg" alt="slider"></a>
+        <a href="assets/image/slick18.jpg" class="gallery-photo"><img src="assets/image/slick18.jpg" alt="slider"></a>
+        <a href="assets/image/slick19.jpg" class="gallery-photo"><img src="assets/image/slick19.jpg" alt="slider"></a>
+        <a href="assets/image/slick20.jpg" class="gallery-photo"><img src="assets/image/slick20.jpg" alt="slider"></a>
+        <a href="assets/image/slick21.jpg" class="gallery-photo"><img src="assets/image/slick21.jpg" alt="slider"></a>
+        <a href="assets/image/slick22.jpg" class="gallery-photo"><img src="assets/image/slick22.jpg" alt="slider"></a>
+        <a href="assets/image/slick23.jpg" class="gallery-photo"><img src="assets/image/slick23.jpg" alt="slider"></a>
+        <a href="assets/image/slick24.jpg" class="gallery-photo"><img src="assets/image/slick24.jpg" alt="slider"></a>
+        <a href="assets/image/slick25.jpg" class="gallery-photo"><img src="assets/image/slick25.jpg" alt="slider"></a>
+        <a href="assets/image/slick26.jpg" class="gallery-photo"><img src="assets/image/slick26.jpg" alt="slider"></a>
+        <a href="assets/image/slick27.jpg" class="gallery-photo"><img src="assets/image/slick27.jpg" alt="slider"></a>
+        <a href="assets/image/slick28.jpg" class="gallery-photo"><img src="assets/image/slick28.jpg" alt="slider"></a>
       </div>
 
     </div>
 
   </section>
+
+<!--  <a href="tel:+37477769668">-->
+<!--    <button></button>-->
+<!--  </a>-->
 
   <section id="payment" class="payment">
 
@@ -796,7 +818,7 @@
     </div>
   </div>
 
-  <div class="modal fade "   id="form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal fade " id="form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-form">
       <div class="modal-content modal-form">
         <div class="modal-header">
@@ -840,193 +862,709 @@
     </div>
   </div>
 
-  <div class="modal fade "  id="full-decstop" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal fade " id="full-desktop" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
     <div class="modal-dialog modal-fullscreen modal-full-dialog">
       <div class="modal-content modal-full-content">
         <div class="modal-header">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body modal-body-full">
-            <h3 class="modal-heading">Тротуарная плитка вибропрессованная</h3>
+            <div class="modal-body-item" id="Vibropressed_paving_slabs">
+              <h3 class="modal-heading">Тротуарная плитка вибропрессованная</h3>
 
-          <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   <span class="btn-img">
                     <img src="assets/image/accordion-icon1.svg" alt="accordion">
                     30*30 гладкая
                   </span>
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <div class="inner">
-                    <div class="box">
-                      <h4 class="box-title">Параметры:</h4>
-                      <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
-                      <span class="box-sub-title">Вес – 200 кг/м</span>
-                      <span class="box-sub-title">Кол-во – 50 шт./м2</span>
-                      <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
-                    </div>
-                    <div class="box">
-                      <h4 class="box-title">Качество</h4>
-                      <span class="box-sub-title">Водопоглощение – 1,2%</span>
-                      <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
-                      <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
-                      <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
-                    </div>
-                    <div class="buttons">
-                      <a href="#">
-                        <button class="btn-blue btn-green">
-                          <img src="assets/image/phone.svg" alt="phone">
-                          Позвонить
-                        </button>
-                      </a>
-                      <a href="#calculation">
-                        <button class="btn-blue">
-                          Калькулятор
-                          <img src="assets/image/calculator.svg" alt="calculator">
-                        </button>
-                      </a>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                   <span class="btn-img">
                     <img src="assets/image/accordion-icon2.svg" alt="accordion">
                     Брусчатка 5СМ
                   </span>
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <div class="inner">
-                    <div class="box">
-                      <h4 class="box-title">Параметры:</h4>
-                      <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
-                      <span class="box-sub-title">Вес – 200 кг/м</span>
-                      <span class="box-sub-title">Кол-во – 50 шт./м2</span>
-                      <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
-                    </div>
-                    <div class="box">
-                      <h4 class="box-title">Качество</h4>
-                      <span class="box-sub-title">Водопоглощение – 1,2%</span>
-                      <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
-                      <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
-                      <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
-                    </div>
-                    <div class="buttons">
-                      <a href="#">
-                        <button class="btn-blue btn-green">
-                          <img src="assets/image/phone.svg" alt="phone">
-                          Позвонить
-                        </button>
-                      </a>
-                      <a href="#calculation">
-                        <button class="btn-blue">
-                          Калькулятор
-                          <img src="assets/image/calculator.svg" alt="calculator">
-                        </button>
-                      </a>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                   <span class="btn-img">
                     <img src="assets/image/accordion-icon2.svg" alt="accordion">
                     ВИБРОПРЕССОВАННАЯ БРУСЧАТКА 7СМ
                   </span>
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <div class="inner">
-                    <div class="box">
-                      <h4 class="box-title">Параметры:</h4>
-                      <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
-                      <span class="box-sub-title">Вес – 200 кг/м</span>
-                      <span class="box-sub-title">Кол-во – 50 шт./м2</span>
-                      <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
-                    </div>
-                    <div class="box">
-                      <h4 class="box-title">Качество</h4>
-                      <span class="box-sub-title">Водопоглощение – 1,2%</span>
-                      <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
-                      <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
-                      <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
-                    </div>
-                    <div class="buttons">
-                      <a href="#">
-                        <button class="btn-blue btn-green">
-                          <img src="assets/image/phone.svg" alt="phone">
-                          Позвонить
-                        </button>
-                      </a>
-                      <a href="#calculation">
-                        <button class="btn-blue">
-                          Калькулятор
-                          <img src="assets/image/calculator.svg" alt="calculator">
-                        </button>
-                      </a>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="flush-headingFour">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                   <span class="btn-img">
                     <img src="assets/image/accordion-icon4.svg" alt="accordion">
                     ТРОТУАРНАЯ ПЛИТКА КАТУШКА
                   </span>
-                </button>
-              </h2>
-              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  <div class="inner">
-                    <div class="box">
-                      <h4 class="box-title">Параметры:</h4>
-                      <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
-                      <span class="box-sub-title">Вес – 200 кг/м</span>
-                      <span class="box-sub-title">Кол-во – 50 шт./м2</span>
-                      <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
-                    </div>
-                    <div class="box">
-                      <h4 class="box-title">Качество</h4>
-                      <span class="box-sub-title">Водопоглощение – 1,2%</span>
-                      <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
-                      <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
-                      <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
-                    </div>
-                    <div class="buttons">
-                      <a href="#">
-                        <button class="btn-blue btn-green">
-                          <img src="assets/image/phone.svg" alt="phone">
-                          Позвонить
-                        </button>
-                      </a>
-                      <a href="#calculation">
-                        <button class="btn-blue">
-                          Калькулятор
-                          <img src="assets/image/calculator.svg" alt="calculator">
-                        </button>
-                      </a>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+            <div class="modal-body-item" id="Paving_slabs_vibrocasting">
+              <h3 class="modal-heading">Тротуарная плитка вибролитая</h3>
+
+              <div class="accordion accordion-flush" id="accordionFlushExample2">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon1.svg" alt="accordion">
+                    30*30 гладкая
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne3" class="accordion-collapse collapse" aria-labelledby="flush-headingOne3" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo3" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon2.svg" alt="accordion">
+                    Брусчатка 5СМ
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo3" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree3" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon2.svg" alt="accordion">
+                    ВИБРОПРЕССОВАННАЯ БРУСЧАТКА 7СМ
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingFour4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour4" aria-expanded="false" aria-controls="flush-collapseFour">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon4.svg" alt="accordion">
+                    ТРОТУАРНАЯ ПЛИТКА КАТУШКА
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseFour4" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body-item" id="Facing_stone">
+              <h3 class="modal-heading">Облицовочный камень</h3>
+
+              <div class="accordion accordion-flush" id="accordionFlushExample3">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon1.svg" alt="accordion">
+                    30*30 гладкая
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne4" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body-item" id="curbstone">
+              <h3 class="modal-heading">Бордюрный камень</h3>
+
+              <div class="accordion accordion-flush" id="accordionFlushExample4">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne5" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon1.svg" alt="accordion">
+                    30*30 гладкая
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne4" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo5" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon2.svg" alt="accordion">
+                    Брусчатка 5СМ
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo5" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body-item" id="Concrete_steps">
+              <h3 class="modal-heading">Ступеньки бетонные</h3>
+
+              <div class="accordion accordion-flush" id="accordionFlushExample5">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne6" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon1.svg" alt="accordion">
+                    30*30 гладкая
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne6" class="accordion-collapse collapse" aria-labelledby="flush-headingOne4" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo6">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo6" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon2.svg" alt="accordion">
+                    Брусчатка 5СМ
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo6" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body-item" id="Caps_And_Caps">
+              <h3 class="modal-heading">КРЫШКИ И КОЛПАКИ</h3>
+
+              <div class="accordion accordion-flush" id="accordionFlushExample6">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne7" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon1.svg" alt="accordion">
+                    30*30 гладкая
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne7" class="accordion-collapse collapse" aria-labelledby="flush-headingOne4" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo7">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo7" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <span class="btn-img">
+                    <img src="assets/image/accordion-icon2.svg" alt="accordion">
+                    Брусчатка 5СМ
+                  </span>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo7" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <div class="inner">
+                        <div class="box">
+                          <h4 class="box-title">Параметры:</h4>
+                          <span class="box-sub-title">Размеры – 100 x 200 x 50</span>
+                          <span class="box-sub-title">Вес – 200 кг/м</span>
+                          <span class="box-sub-title">Кол-во – 50 шт./м2</span>
+                          <span class="box-sub-title">1 европалете – 10 м2, 500 шт., вес 2000 кг</span>
+                        </div>
+                        <div class="box">
+                          <h4 class="box-title">Качество</h4>
+                          <span class="box-sub-title">Водопоглощение – 1,2%</span>
+                          <span class="box-sub-title">Потери в объёме после 16 циклов – 111694 мм3/5000 мм2</span>
+                          <span class="box-sub-title">Прочность на раскол – MPa 4,8</span>
+                          <span class="box-sub-title">Цена: ОТ 400Р/М2</span>
+                        </div>
+                        <div class="buttons">
+                          <a href="#">
+                            <button class="btn-blue btn-green">
+                              <img src="assets/image/phone.svg" alt="phone">
+                              Позвонить
+                            </button>
+                          </a>
+                          <a href="#calculation">
+                            <button class="btn-blue">
+                              Калькулятор
+                              <img src="assets/image/calculator.svg" alt="calculator">
+                            </button>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -1036,9 +1574,11 @@
 
 
 
+
+
+
   <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
   <a class="btn btn-primary" data-bs-toggle="modal" href="#form-modal" role="button">Open form</a>
-  <a class="btn btn-primary" data-bs-toggle="modal" href="#full-decstop" role="button">full</a>
 
 <script src="js/fastfront.js"></script>
 <script src="js/script.js"></script>

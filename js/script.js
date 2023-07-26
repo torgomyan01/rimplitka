@@ -274,4 +274,60 @@ $(window).on('resize', function (){
     }
 }).resize()
 
+$('.gallery-photo').on('click', function (e) {
+
+    e.preventDefault();
+
+    const items = [],
+      options = {
+          index: $(this).index()
+      };
+
+    $('.gallery-photo').each(function () {
+        let src = $(this).attr('href');
+        items.push({
+            src: src
+        });
+    });
+
+    new PhotoViewer(items, options);
+
+});
+
+
+
+//.........Modal full
+
+const modalProducts = new bootstrap.Modal('#full-desktop', {
+    keyboard: false
+})
+
+const modalOpenFull = $('.modal-open-full')
+
+modalOpenFull.on('click', function (){
+    const id = $(this).attr('href');
+
+    openModalCategory(id);
+})
+
+$(window).on('load', function (){
+    const id = window.location.hash;
+    if(id){
+        openModalCategory(id)
+    }
+})
+
+
+function openModalCategory(id){
+
+    if($(id).length){
+        modalProducts.show();
+        $('.modal-body-item').addClass('d-none');
+        $(id).removeClass('d-none');
+    }
+
+
+}
+
+
 
