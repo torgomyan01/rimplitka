@@ -31,6 +31,9 @@ const { mobileMenu, body, imageWidget } = {
 // })
 
 
+
+
+
 function clearActive(){
     img_widget.forEach(im=>{
         im.classList.remove('active')
@@ -70,6 +73,12 @@ defaultInput.on('focus', function (){
 
 // const menu_bars = document.querySelector('#menu-bars')
 const menuItemMobile = $('.menu-item-mobile');
+const menu_mobile_btn = $('.menu-mobile-btn .btn-blue')
+
+menu_mobile_btn.on('click', function (){
+    menuItemMobile.removeClass(active);
+})
+
 
 // menu_bars.addEventListener('click', ()=>{
 //     menu_item_mobile.classList.toggle('active')

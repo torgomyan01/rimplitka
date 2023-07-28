@@ -310,7 +310,96 @@ body {
   }
 
 
+// call
 
+.btn-fix-call{
+  position: fixed;
+  min-inline-size: 40px;
+  height: 40px;
+  border-radius: 1.875rem;
+  background: #03A0D1;
+  color: #fff;
+  right: 30px;
+  bottom: 30px;
+  transition: 0.3s;
+  @include flex('c', 'c');
+  animation: play 2s ease infinite;
+  z-index: 100;
+  &.active{
+    background: #03A0D1;
+    right: 78px;
+    border: 0;
+    color: #fff;
+  }
+  &:hover{
+    color: #fff;
+    background: #03A0D1;
+    span{
+      max-width: 200px;
+      margin-left: 5px;
+    }
+  }
+  i{
+    transition: 0.3s;
+    animation: call 2s infinite;
+  }
+  span{
+    transition: 0.3s;
+    max-width: 0;
+    overflow: hidden;
+    display: block;
+    margin-left: 0;
+  }
+}
+
+
+@keyframes play {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    box-shadow: 0 0 0 5px rgba(3, 160, 209, 0.4);
+  }
+  25% {
+    box-shadow: 0 0 0 10px rgba(3, 160, 209, 0.4), 0 0 0 20px rgba(3, 160, 209, 0.2);
+  }
+  25% {
+    box-shadow: 0 0 0 15px rgba(3, 160, 209, 0.4), 0 0 0 30px rgba(3, 160, 209, 0.2);
+  }
+
+}
+
+@keyframes call {
+  0%{}
+  2.5%{
+    transform: translateX(0%);
+  }
+  5%{
+    transform: translateX(-30%);
+  }
+  7.5%{
+    transform: translateX(30%);
+  }
+  10%{
+    transform: translateX(10%);
+  }
+  15%{
+    transform: translateX(-10%);
+  }
+  20%{
+    transform: translateX(5%);
+  }
+  100%{}
+}
+
+.btn-fix-top{
+  position: fixed;
+  border-radius: 1.875rem;
+  font-size: 38px;
+  color: #03A0D1;
+  right: 24px;
+  bottom: 20px;
+}
 
 //..................... Menu............
 
@@ -438,18 +527,6 @@ body {
         justify-content: space-between;
         align-items: center;
       }
-      //#menu-bars{
-      //  color: #fff;
-      //  cursor: pointer;
-      //  &:hover{
-      //    color: #FB9C2A;
-      //    transition: .2s;
-      //  }
-      //  i{
-      //    font-size: 30px;
-      //  }
-      //
-      //}
 
     }
 
@@ -468,7 +545,7 @@ body {
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: .3s;
       }
-      a{
+      .menu-item-mobile-teg{
         display: block;
         color: #fff;
         text-align: center;
