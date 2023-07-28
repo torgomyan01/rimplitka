@@ -83,6 +83,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  text-transform: uppercase;
 }
 
 .title-blue{
@@ -1184,6 +1185,7 @@ header{
 
   .outWork{
     margin-top: 43px;
+    overflow: hidden;
     .outWork-container{
 
       .heading{
@@ -1263,74 +1265,9 @@ header{
           }
 
 
-          .slick-prev{
-            background-color: #176B87 !important;
-            width: 60px !important;
-            height: 60px !important;
-            display: inline-block ;
-            position: absolute !important;
-            left: -30px!important;
-            top: 50% !important;
-            transform: translateY(-70%);
-            border-radius: 50% !important;
-            padding: 5px !important;
-            z-index: 32;
-            font-size: 0;
-            &:before{
-              content: '←';
-              font-family: 'slick';
-              font-size: 20px;
-              line-height: 1;
-              opacity: .75;
-              color: white;
-            }
-            @media (max-width: 1200px) {
-                left: -20px !important;
-            }
-            @media (max-width: 1024px) {
-             left: -12px !important;
-            }
-            @media (max-width: 768px) {
-             left: -10px !important;
-            }
-            @media (max-width: 425px) {
-              left: 0 !important;
-            }
-          }
 
-          .slick-next{
-            background-color: #176B87 !important;
-            width: 60px !important;
-            height: 60px !important;
-            display: inline-block ;
-            position: absolute;
-            top: 50% !important;
-            transform: translateY(-70%);
-            right: -30px;
-            border-radius: 50% !important;
-            padding: 5px !important;
-            font-size: 0;
-            &:before{
-              content: '→';
-              font-family: 'slick';
-              font-size: 20px;
-              line-height: 1;
-              opacity: .75;
-              color: white;
-            }
-            @media (max-width: 1200px) {
-              right: -20px;
-            }
-            @media (max-width: 1024px) {
-              right: -12px;
-            }
-            @media (max-width: 768px) {
-              right: -10px;
-            }
-            @media (max-width: 425px) {
-              right: 0;
-            }
-          }
+
+
         }
 
 
@@ -1340,6 +1277,85 @@ header{
 
   }
 
+.slick-next{
+  background-color: #176B87 !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: inline-block ;
+  position: absolute;
+  top: 50% !important;
+  transform: translateY(-70%);
+  right: -30px;
+  border-radius: 50% !important;
+  padding: 5px !important;
+  font-size: 0;
+  &:before{
+    content: '\f054';
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+  }
+  @media (max-width: 1200px) {
+    right: -20px;
+  }
+  @media (max-width: 1024px) {
+    right: -12px;
+  }
+  @media (max-width: 768px) {
+    right: -10px;
+  }
+  @media (max-width: 425px) {
+    right: 0;
+  }
+}
+
+
+.slick-prev{
+  background-color: #176B87 !important;
+  width: 60px !important;
+  height: 60px !important;
+  display: inline-block ;
+  position: absolute !important;
+  left: -30px!important;
+  top: 50% !important;
+  transform: translateY(-70%);
+  border-radius: 50% !important;
+  padding: 5px !important;
+  z-index: 32;
+  font-size: 0;
+  &:before{
+    content: '\f104';
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+  }
+  @media (max-width: 1200px) {
+    left: -20px !important;
+  }
+  @media (max-width: 1024px) {
+    left: -12px !important;
+  }
+  @media (max-width: 768px) {
+    left: -10px !important;
+  }
+  @media (max-width: 425px) {
+    left: 0 !important;
+  }
+}
+
+
+#work-for-etaps{
+  .slick-list{
+    padding-top: 50px;
+  }
+  .slick-dots{
+    display: none !important;
+  }
+}
 
 //............. OutWork end.......
 
