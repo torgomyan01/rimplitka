@@ -395,7 +395,7 @@ body {
 .btn-fix-top{
   position: fixed;
   border-radius: 1.875rem;
-  font-size: 38px;
+  font-size: 34px;
   color: #03A0D1;
   right: 24px;
   bottom: 20px;
@@ -1529,6 +1529,109 @@ header{
 
 //................ End Calculation
 
+
+//.............. Our-all-services...
+
+.Our_all_services{
+  margin-top: 115px;
+  @media (max-width: 768px) {
+      margin-top: 90px;
+  }
+  .container-Our_all_services{
+
+  .heading{
+    text-align: center;
+  }
+
+    .title-black{
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .inner{
+
+      .Our_all_services-box{
+        width: 100%;
+        border: 1px solid rgba(23, 107, 135, 0.20);
+        border-radius: 20px;
+        transition: .3s;
+        @media (max-width: 768px) {
+          margin-bottom: 20px;
+        }
+        &:hover{
+          background:#176B87;
+
+          .our-service-headingg{
+            color: #fff !important;
+          }
+
+          .our-service-title{
+            color: #fff !important;
+          }
+
+        }
+        .image{
+          width: 100%;
+          img{
+            object-fit: cover;
+            width: 100%;
+          }
+        }
+
+        .text-blok{
+          padding: 0 15px;
+          .our-service-headingg{
+            color: #323232;
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: normal;
+            margin: 15px 0;
+          }
+
+          .our-service-title{
+            color: #323232;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+
+          .buttons{
+              display: flex;
+            justify-content: center;
+            margin: 25px 0;
+            @media (max-width: 576px) {
+              width: 100%;
+              display: block;
+            }
+            .btn-green{
+              background: #4BCA1E;
+              @media (max-width: 576px) {
+                width: 100%;
+              }
+              img{
+                margin-right: 15px;
+              }
+            }
+          }
+
+        }
+
+      }
+
+
+    }
+
+
+
+  }
+
+
+
+}
+
+//.........our-all-services end
 
 
 // .......... map ///////////

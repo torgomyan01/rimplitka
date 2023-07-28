@@ -216,7 +216,7 @@ function myFunction() {
 
 $('.slider').slick({
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 5,
@@ -322,20 +322,19 @@ modalOpenFull.on('click', function (){
 $(window).on('load', function (){
     const id = window.location.hash;
     if(id){
-        openModalCategory(id)
+        $('.modal-body-item').each((index, elem) => {
+            if(`#${elem.id}` === id){
+                openModalCategory(id)
+            }
+        })
     }
 })
 
 
 function openModalCategory(id){
-
-    if($(id).length){
-        modalProducts.show();
-        $('.modal-body-item').addClass('d-none');
-        $(id).removeClass('d-none');
-    }
-
-
+    modalProducts.show();
+    $('.modal-body-item').addClass('d-none');
+    $(id).removeClass('d-none');
 }
 
 

@@ -343,7 +343,7 @@ body {
 .btn-fix-top {
   position: fixed;
   border-radius: 1.875rem;
-  font-size: 38px;
+  font-size: 34px;
   color: #03A0D1;
   right: 24px;
   bottom: 20px;
@@ -1400,6 +1400,89 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.Our_all_services {
+  margin-top: 115px;
+}
+@media (max-width: 768px) {
+  .Our_all_services {
+    margin-top: 90px;
+  }
+}
+.Our_all_services .container-Our_all_services .heading {
+  text-align: center;
+}
+.Our_all_services .container-Our_all_services .title-black {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box {
+  width: 100%;
+  border: 1px solid rgba(23, 107, 135, 0.2);
+  border-radius: 20px;
+  transition: 0.3s;
+}
+@media (max-width: 768px) {
+  .Our_all_services .container-Our_all_services .inner .Our_all_services-box {
+    margin-bottom: 20px;
+  }
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box:hover {
+  background: #176B87;
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box:hover .our-service-headingg {
+  color: #fff !important;
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box:hover .our-service-title {
+  color: #fff !important;
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box .image {
+  width: 100%;
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box .image img {
+  object-fit: cover;
+  width: 100%;
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok {
+  padding: 0 15px;
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok .our-service-headingg {
+  color: #323232;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+  margin: 15px 0;
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok .our-service-title {
+  color: #323232;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok .buttons {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}
+@media (max-width: 576px) {
+  .Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok .buttons {
+    width: 100%;
+    display: block;
+  }
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok .buttons .btn-green {
+  background: #4BCA1E;
+}
+@media (max-width: 576px) {
+  .Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok .buttons .btn-green {
+    width: 100%;
+  }
+}
+.Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok .buttons .btn-green img {
+  margin-right: 15px;
 }
 
 .map {
