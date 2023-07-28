@@ -330,4 +330,14 @@ function openModalCategory(id){
 }
 
 
+// close modal
+
+
+const modal_calc = document.querySelectorAll('.modal-calc .btn-blue')
+
+modal_calc.forEach((elem) =>{
+    elem.addEventListener('click', ()=>{
+        modalProducts.hide();
+    })
+})
 

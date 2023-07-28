@@ -178,21 +178,12 @@ body {
 .modal-full-dialog .modal-full-content .modal-header {
   border: none;
 }
-.modal-full-dialog .modal-full-content .modal-body-full {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 .modal-full-dialog .modal-full-content .modal-body-full .modal-heading {
   color: #000;
   font-size: 3rem;
   font-style: normal;
   font-weight: 400;
   margin-bottom: 35px;
-}
-.modal-full-dialog .modal-full-content .modal-body-full .accordion {
-  max-width: 1196px !important;
-  width: 100% !important;
 }
 .modal-full-dialog .modal-full-content .modal-body-full .accordion .accordion-item {
   border-radius: 3px !important;
@@ -210,6 +201,14 @@ body {
 }
 .modal-full-dialog .modal-full-content .modal-body-full .accordion .accordion-item .accordion-header .accordion-button .btn-img img {
   margin-right: 20px;
+}
+.modal-full-dialog .modal-full-content .modal-body-full .accordion .accordion-item .accordion-body .inner .modal-title {
+  color: #323232;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1rem;
+  max-width: 800px;
 }
 .modal-full-dialog .modal-full-content .modal-body-full .accordion .accordion-item .accordion-body .inner .box {
   margin-bottom: 25px;
@@ -1255,7 +1254,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 }
 .work-etaps .work-etaps-container .work-etaps-item .logo {
   width: 170px;
-  height: 80px;
+  height: 76px;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -1270,7 +1269,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -41px;
+  top: -39px;
   background: url("../assets/image/logo-work-etaps.svg") no-repeat center;
   background-size: contain;
 }

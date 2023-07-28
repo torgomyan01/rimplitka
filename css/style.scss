@@ -191,16 +191,13 @@ body {
 .modal-full-dialog{
   background: #fff;
 
-  .modal-full-content{
 
+  .modal-full-content{
     .modal-header{
       border: none;
     }
 
     .modal-body-full{
-      display: flex;
-      align-items: center;
-      flex-direction: column;
       .modal-heading{
         color: #000;
         font-size: 3rem;
@@ -209,8 +206,6 @@ body {
         margin-bottom: 35px;
       }
       .accordion{
-        max-width: 1196px !important;
-        width: 100% !important;
 
         .accordion-item{
           border-radius: 3px !important;
@@ -240,6 +235,15 @@ body {
           .accordion-body{
 
             .inner{
+
+              .modal-title{
+                color: #323232;
+                font-size: 1.125rem;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 1rem;
+                max-width: 800px;
+              }
 
               .box{
                 margin-bottom: 25px;
@@ -1360,7 +1364,7 @@ header{
       //}
       .logo{
         width: 170px;
-        height: 80px;
+        height: 76px;
         z-index: 1;
         display: flex;
         justify-content: center;
@@ -1375,7 +1379,7 @@ header{
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: -41px;
+        top: -39px;
         background: url("../assets/image/logo-work-etaps.svg") no-repeat center;
         background-size: contain;
       }
