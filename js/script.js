@@ -15,7 +15,11 @@ const { mobileMenu, body, imageWidget } = {
     imageWidget: $('.image-widget'),
 }
 
-$('img').Lazy();
+$('img[data-src]').Lazy({
+    afterLoad: function(element) {
+        $(element).removeAttr('width').removeAttr('height')
+    },
+});
 
 //
 // AOS.init()
