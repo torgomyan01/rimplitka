@@ -14,6 +14,9 @@ const { mobileMenu, body, imageWidget } = {
     body: $('body'),
     imageWidget: $('.image-widget'),
 }
+
+$('img').Lazy();
+
 //
 // AOS.init()
 //
@@ -261,7 +264,7 @@ $(window).on('resize', function (){
         statusSlider = false;
         $('#work-for-etaps').slick({
             dots: true,
-            infinite: false,
+            infinite: true,
             speed: 300,
             slidesToShow: 1,
             slidesToScroll: 1,
