@@ -1298,16 +1298,18 @@ header{
     color: white;
   }
   @media (max-width: 1200px) {
-    right: -20px;
+    right: -5px;
   }
   @media (max-width: 1024px) {
-    right: -12px;
+    right: -2px;
   }
   @media (max-width: 768px) {
-    right: -10px;
+    right: 0;
+    width: 40px !important;
+    height: 40px !important;
   }
   @media (max-width: 425px) {
-    right: 0;
+    right: 5px;
   }
 }
 
@@ -1334,16 +1336,18 @@ header{
     color: white;
   }
   @media (max-width: 1200px) {
-    left: -20px !important;
+    left: -5px !important;
   }
   @media (max-width: 1024px) {
-    left: -12px !important;
+    left: -2px !important;
   }
   @media (max-width: 768px) {
-    left: -10px !important;
+    left: 0 !important;
+    width: 40px !important;
+    height: 40px !important;
   }
   @media (max-width: 425px) {
-    left: 0 !important;
+    left: 5px !important;
   }
 }
 
@@ -1355,6 +1359,20 @@ header{
   .slick-dots{
     display: none !important;
   }
+
+  .slick-prev{
+    top: 5px !important;
+    left: 10px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .slick-next{
+    top: 5px !important;
+    right: 10px !important;
+    width: 50px !important;
+    height: 50px !important;
+  }
+
 }
 
 //............. OutWork end.......
@@ -1428,11 +1446,14 @@ header{
 
 .work-etaps{
   margin-top: 108px;
-    @media (max-width: 767px) {
+  overflow: hidden;
+    @media (max-width: 768px) {
         margin-top: 65px;
     }
   .work-etaps-container{
-
+    @media (max-width: 768px) {
+      padding: 0 30px;
+    }
     .heading{
       text-align: center;
       margin-bottom: 62px;
@@ -1457,7 +1478,7 @@ header{
       //}
       .logo{
         width: 170px;
-        height: 76px;
+        height: 78px;
         z-index: 1;
         display: flex;
         justify-content: center;
@@ -1836,7 +1857,7 @@ footer{
 
     h4{
       color: #FFF;
-      font-size: 20px;
+      font-size: 1.25rem;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -1848,7 +1869,7 @@ footer{
     .number{
       a{
         color: #FFF;
-        font-size: 20px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

@@ -259,7 +259,6 @@ let statusSlider = true;
 $(window).on('resize', function (){
     if($(window).width() <= 768 && statusSlider){
         statusSlider = false;
-        console.log('sddddd')
         $('#work-for-etaps').slick({
             dots: true,
             infinite: false,
