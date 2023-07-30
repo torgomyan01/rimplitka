@@ -16,7 +16,7 @@ const { mobileMenu, body, imageWidget } = {
 }
 
 $('img[data-src]').Lazy({
-    afterLoad: function(element) {
+    beforeLoad: function(element) {
         $(element).removeAttr('width').removeAttr('height')
     },
 });
@@ -223,6 +223,7 @@ function myFunction() {
 
 $('.slider').slick({
     dots: true,
+    lazyLoad: 'ondemand',
     infinite: true,
     speed: 300,
     slidesToShow: 5,
