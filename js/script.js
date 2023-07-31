@@ -273,6 +273,7 @@ $(window).on('resize', function (){
             speed: 300,
             slidesToShow: 1,
             slidesToScroll: 1,
+            adaptiveHeight: true
             // responsive: [
             //     {
             //         breakpoint: 1024,
@@ -337,7 +338,9 @@ $(window).on('load', function (){
     if(id){
         $('.modal-body-item').each((index, elem) => {
             if(`#${elem.id}` === id){
+                d_block()
                 openModalCategory(id)
+
             }
         })
     }
@@ -368,3 +371,32 @@ modal_calc.forEach((elem) =>{
     })
 })
 
+const accordion_button = document.querySelectorAll('.accordion-button .btn-img img')
+const modal_open_full = document.querySelectorAll('.modal-open-full')
+
+
+modal_open_full.forEach((btn) =>{
+    btn.addEventListener('click', ()=>{
+        if(modalProducts._isShown){
+            console.log(modalProducts._isShown)
+            d_block()
+        } else if(modalProducts._isShown === false) {
+            d_none()
+        }
+    })
+})
+
+
+function d_block (){
+    console.log(accordion_button)
+    accordion_button.forEach((elem)=>{
+        elem.style.setProperty("display", "inline", "important")
+    })
+}
+
+function d_none (){
+    console.log(accordion_button)
+    accordion_button.forEach((elem)=>{
+        elem.style.setProperty("display", "none", "important")
+    })
+}
