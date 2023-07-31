@@ -320,6 +320,10 @@ const modalProducts = new bootstrap.Modal('#full-desktop', {
     keyboard: false
 })
 
+const info = new bootstrap.Modal('#info-block', {
+    keyboard: false
+})
+
 const modalOpenFull = $('.modal-open-full')
 
 modalOpenFull.on('click', function (){
@@ -355,6 +359,12 @@ const modal_calc = document.querySelectorAll('.modal-calc .btn-blue')
 modal_calc.forEach((elem) =>{
     elem.addEventListener('click', ()=>{
         modalProducts.hide();
+    })
+})
+
+modal_calc.forEach((elem) =>{
+    elem.addEventListener('click', ()=>{
+        info.hide();
     })
 })
 
