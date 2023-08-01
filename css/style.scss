@@ -98,6 +98,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media (max-width: 425px) {
+    font-size: 15px;
+  }
 }
 
 .title-black{
@@ -509,18 +512,20 @@ body {
   position: fixed;
   border-radius: 1.875rem;
   min-inline-size: 40px;
+  width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 100;
-  color: #03A0D1;
+  background: #03A0D1;
   right: 24px;
   bottom: 30px;
   i{
-    display: inline !important;
-    width: 100%;
-    font-size: 36.5px;
+    color: #fff;
+    background: #03A0D1;
+    font-weight: 900;
+    font-size: 20px;
   }
 }
 
@@ -541,7 +546,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .mobile-menu-board {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -598,7 +603,7 @@ body {
   border-radius: 0 0 30px 30px;
   background: rgba(0, 28, 48, 0.70);
   backdrop-filter: blur(5px);
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     border-radius: 0;
   }
   .menu-bar{
@@ -609,7 +614,7 @@ body {
     @media (max-width: 976px) {
       max-width: 100%;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 768px) {
         max-width: 100%;
       padding: 10px 15px;
     }
@@ -619,7 +624,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         display: none;
       }
       a{
@@ -645,7 +650,7 @@ body {
     .menu-mobile{
       position: relative;
       display: none;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -661,7 +666,7 @@ body {
 
 .menu-item-mobile{
   display: none;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: initial;
     z-index: 1000;
     position: fixed;
@@ -740,8 +745,8 @@ header{
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(3px);
       padding: 190px 50px 150px 122px;
-      @media (max-width: 767px) {
-        padding: 150px 40px 110px 110px;
+      @media (max-width: 768px) {
+        padding: 165px 50px 150px 65px;
       }
       @media (max-width: 576px) {
         padding: 120px 20px 60px 20px;
@@ -872,16 +877,14 @@ header{
             height: 14px;
             cursor: pointer;
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            padding: 3px;
             &:last-child{
               margin-right: 0;
             }
             .icon-item {
               border-radius: 50%;
-              width: 7px;
-              height: 7px;
+              width: 100%;
+              height: 100%;
               display: block;
               cursor: pointer;
               &.active{
@@ -909,7 +912,7 @@ header{
 
 .cards {
   margin-top: 100px;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     margin-top: 60px;
   }
 
@@ -986,19 +989,19 @@ header{
       background: #176B87;
       padding: 35px;
       margin-bottom: 25px;
+      transition: .3s;
       &:last-child{
         margin-bottom: 0;
       }
       &:hover{
         background: #1E87AA;
-        transition: .3s;
       }
       @media (max-width: 576px) {
         padding: 20px;
       }
       .inner{
         display: flex;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           display: block;
         }
         .image{
@@ -1082,11 +1085,14 @@ header{
             .btn-card{
               color: #176B87;
               background: #fff;
+              transition: .3s;
               @media (max-width: 576px) {
                 width: 100%;
               }
               &:hover{
-                background: #b5e1ec;
+                border: 1px solid #FFF;
+                background: #176B87;
+                color: #fff;
               }
               img{
                 margin-left: 10px;
@@ -1126,7 +1132,7 @@ header{
 
 .calculator{
     margin-top: 91px;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
       margin-top: 73px;
   }
   .container-calculator{
@@ -1146,10 +1152,10 @@ header{
     .calculator-form{
       background: #fff;
       width: 100%;
-      border-radius: 0.3125rem;
+      border-radius: 1.25rem;
       border: 1px solid #176B87;
       padding: 1.25rem 0 4.375rem 0;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         padding: 1.25rem 0.625rem 1.875rem 0.625rem;
       }
       .calculator-title{
@@ -1163,7 +1169,7 @@ header{
         @media (max-width: 1100px) {
           padding: 0 100px;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           padding: 0 30px;
         }
         @media (max-width: 576px) {
@@ -1220,6 +1226,24 @@ header{
                 width: 100%;
               }
             }
+
+            #base_type{
+              border-radius: 5px;
+              border: 1px solid #176B87;
+              width: 357px;
+              padding: 10px;
+              color: #333;
+              font-size: 1.125rem;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              &::placeholder{
+                color: #DFDBDB;
+              }
+              @media (max-width: 576px) {
+                width: 100%;
+              }
+            }
           }
           .buttons {
             @media (max-width: 576px) {
@@ -1234,7 +1258,7 @@ header{
           }
         }
         .image{
-          @media (max-width: 767px) {
+          @media (max-width: 768px) {
             width: 100%;
             img{
               width: 100%;
@@ -1267,7 +1291,7 @@ header{
     min-height: 75vh;
   }
   @media (max-width: 376px) {
-    min-height: 100%
+    min-height: auto;
  }
   .image{
     height: 100%;
@@ -1283,8 +1307,14 @@ header{
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(5px);
     padding: 52px 30px 0 50px;
+    @media (max-width: 1024px) {
+      padding: 95px 20px 0 20px;
+    }
     @media (max-width: 576px) {
       padding: 45px 20px 0 20px;
+    }
+    @media (max-width: 376px) {
+      padding: 30px 20px 0 20px;
     }
 
     .heading{
@@ -1344,7 +1374,7 @@ header{
               border-radius: 20px !important;
               margin-right: 20px !important;
               cursor: pointer;
-              @media (max-width: 767px) {
+              @media (max-width: 768px) {
                 margin-right: 10px !important;
               }
               &:last-child {
@@ -1368,23 +1398,30 @@ header{
             margin-top: 20px;
             li{
               position: relative;
-              display: inline-block;
               width: 14px;
               height: 14px;
               margin: 0 5px;
-              padding: 0;
+              padding: 5px;
               background: rgba(23, 107, 135, 0.20);;
               border-radius: 50%;
               cursor: pointer;
+              display: flex;
+              justify-content: center;
+              align-items: center;
               &.slick-active{
-                background: #176B87;
-              }
-              button{
-                font-size: 0;
-                line-height: 0;
-                display: block;
                 width: 14px;
                 height: 14px;
+                button{
+                  background: #176B87;
+                }
+              }
+              button{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
                 padding: 5px;
                 cursor: pointer;
                 color: transparent;
@@ -1392,8 +1429,8 @@ header{
                 outline: none;
                 background: transparent;
                 &:before{
+                  content: "";
                   opacity: .75;
-                  color: #FF6900;
                 }
               }
             }
@@ -1522,7 +1559,7 @@ header{
 
 .payment{
   margin-top: 150px;
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     margin-top: 75px;
   }
   .container-payment{
@@ -1534,7 +1571,7 @@ header{
     .inner{
       display: flex;
       margin-top: 44px;
-      @media (max-width: 767px) {
+      @media (max-width: 768px) {
         display: block;
         margin-top: 20px;
       }
@@ -1553,7 +1590,7 @@ header{
       .payment-info{
         margin-left: 45px;
         margin-bottom: 20px;
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
           margin-left: 0;
           margin-top: 23px;
         }
@@ -1605,6 +1642,10 @@ header{
       //}
     }
 
+    .slick-slide{
+      margin: 0 8px;
+    }
+
     .work-etaps-item{
       width: 100%;
       height: 100%;
@@ -1613,12 +1654,15 @@ header{
       background: #FFF;
       padding: 58px 0 10px 0;
       position: relative;
+      @media (max-width: 768px) {
+        margin-right: 15px;
+      }
       //@media (max-width: 767px) {
       //    height: auto;
       //}
       .logo{
         width: 170px;
-        height: 78px;
+        height: 76px;
         z-index: 1;
         display: flex;
         justify-content: center;
@@ -1636,6 +1680,9 @@ header{
         top: -39px;
         background: url("../assets/image/logo-work-etaps.svg") no-repeat center;
         background-size: contain;
+        @media (max-width: 1024px) {
+          height: 76px;
+        }
       }
       .image{
         margin: 0 auto;
@@ -1820,7 +1867,7 @@ header{
 .map{
   margin-top: 82px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
       margin-top: 75px;
   }
   .heading{
@@ -1841,7 +1888,7 @@ header{
       left: 0;
       top: 0;
       z-index: 1;
-      @media (max-width: 576px) {
+      @media (max-width: 768px) {
         display: none;
       }
       h4{
@@ -1889,7 +1936,7 @@ header{
     }
 
     .inner {
-      @media (max-width: 576px) {
+      @media (max-width: 768px) {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -1897,7 +1944,7 @@ header{
       .contacts-mobile {
         display: none;
         padding: 0 10px;
-        @media (max-width: 576px) {
+        @media (max-width: 768px) {
           display: block;
           background: rgba(23, 107, 135, 0.70);
           backdrop-filter: blur(5px);
@@ -1961,6 +2008,9 @@ header{
   .inputbox{
     max-width: 350px;
     width: 100%;
+    @media (max-width: 768px) {
+      margin: 0 auto;
+    }
     @media (max-width: 576px) {
       max-width: 100%;
     }

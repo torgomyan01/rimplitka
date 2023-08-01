@@ -333,14 +333,16 @@ modalOpenFull.on('click', function (){
     openModalCategory(id);
 })
 
+const modal_calc = document.querySelectorAll('.modal-calc .btn-blue')
+const accordion_button = document.querySelectorAll('.accordion-button .btn-img img')
+const modal_open_full = document.querySelectorAll('.modal-open-full')
+
 $(window).on('load', function (){
     const id = window.location.hash;
     if(id){
         $('.modal-body-item').each((index, elem) => {
             if(`#${elem.id}` === id){
-                d_block()
                 openModalCategory(id)
-
             }
         })
     }
@@ -351,13 +353,14 @@ function openModalCategory(id){
     modalProducts.show();
     $('.modal-body-item').addClass('d-none');
     $(id).removeClass('d-none');
+    accordion_button.forEach((elem)=>{
+        elem.style.cssText ="display: inline !important"
+    })
 }
 
 
 // close modal
 
-
-const modal_calc = document.querySelectorAll('.modal-calc .btn-blue')
 
 modal_calc.forEach((elem) =>{
     elem.addEventListener('click', ()=>{
@@ -371,8 +374,7 @@ modal_calc.forEach((elem) =>{
     })
 })
 
-const accordion_button = document.querySelectorAll('.accordion-button .btn-img img')
-const modal_open_full = document.querySelectorAll('.modal-open-full')
+
 
 
 modal_open_full.forEach((btn) =>{
@@ -388,7 +390,6 @@ modal_open_full.forEach((btn) =>{
 
 
 function d_block (){
-    console.log(accordion_button)
     accordion_button.forEach((elem)=>{
         elem.style.setProperty("display", "inline", "important")
     })
@@ -400,3 +401,14 @@ function d_none (){
         elem.style.setProperty("display", "none", "important")
     })
 }
+
+
+const close_btn = document.querySelectorAll('.btn-close')
+
+close_btn.forEach((btn)=>{
+    const id = window.location.hash;
+    btn.addEventListener('click', ()=>{
+       window.location.hash = '#card'
+
+    })
+})
