@@ -1720,7 +1720,8 @@ header{
           margin-bottom: 20px;
         }
         &:hover{
-          background:#176B87;
+          background: #176B87;
+          transform: scale(1.03);
 
           .our-service-headingg{
             color: #fff !important;
@@ -1748,6 +1749,7 @@ header{
             font-weight: 700;
             line-height: normal;
             margin: 15px 0;
+            transition: 0.3s;
           }
 
           .our-service-title{
@@ -1756,6 +1758,7 @@ header{
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            transition: 0.3s;
           }
 
           .buttons{

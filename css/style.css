@@ -1576,6 +1576,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 }
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box:hover {
   background: #176B87;
+  transform: scale(1.03);
 }
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box:hover .our-service-headingg {
   color: #fff !important;
@@ -1600,6 +1601,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   font-weight: 700;
   line-height: normal;
   margin: 15px 0;
+  transition: 0.3s;
 }
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok .our-service-title {
   color: #323232;
@@ -1607,6 +1609,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  transition: 0.3s;
 }
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok .buttons {
   display: flex;
