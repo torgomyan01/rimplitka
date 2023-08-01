@@ -1003,6 +1003,21 @@ header{
         }
         .image{
           margin-right: 1.5625rem;
+          position: relative;
+          &:before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: #0b3b4b;
+            left: -10px;
+            top: 10px;
+            position: absolute;
+            border-radius: 20px;
+          }
+          img{
+            position: relative;
+            transform: translate(0, 0);
+          }
           @media (max-width: 576px) {
             margin-right: 0;
             width: 100%;

@@ -932,6 +932,21 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 }
 .cards .cards-container .card .inner .image {
   margin-right: 1.5625rem;
+  position: relative;
+}
+.cards .cards-container .card .inner .image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #0b3b4b;
+  left: -10px;
+  top: 10px;
+  position: absolute;
+  border-radius: 20px;
+}
+.cards .cards-container .card .inner .image img {
+  position: relative;
+  transform: translate(0, 0);
 }
 @media (max-width: 576px) {
   .cards .cards-container .card .inner .image {
