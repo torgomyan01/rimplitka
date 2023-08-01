@@ -103,12 +103,21 @@ $('.mobile-menu-board').on('click', function (){
 
 // slider
 
+
+const headerSliderArray = [
+  'assets/image/header-slick1.png',
+  'assets/image/header-slick2.png',
+  'assets/image/header-slick3.png',
+  'assets/image/header-slick4.png',
+  'assets/image/header-slick5.png',
+]
+
 const slider_image = document.querySelectorAll('.slider-image')
 const slider_buttons = document.querySelector('.slider-buttons')
 const left_btn = document.querySelector('.left-btn')
 const right_btn = document.querySelector('.right-btn')
 
-slider_image.forEach((elem, index)=>{
+headerSliderArray.forEach((elem, index)=>{
     const icons = document.createElement('div')
     icons.classList.add('icons')
     const icons_item = document.createElement('span')
@@ -116,11 +125,11 @@ slider_image.forEach((elem, index)=>{
     icons.appendChild(icons_item)
     slider_buttons.appendChild(icons)
     if(index === 0){
-        elem.classList.add('active')
+        // elem.classList.add('active')
         icons_item.classList.add('active')
     }
 
-    if(index === slider_image.length -1){
+    if(index === headerSliderArray.length -1){
         startSlider()
     }
 })
@@ -131,8 +140,8 @@ function startSlider(){
         elem.addEventListener('click', ()=>{
             buttons_span.forEach(elem => elem.classList.remove('active'))
             elem.classList.add('active')
-            slider_image.forEach(elem => elem.classList.remove('active'))
-            slider_image[index].classList.add('active')
+            // slider_image.forEach(elem => elem.classList.remove('active'))
+            // slider_image[index].classList.add('active')
         })
     })
 }
@@ -144,7 +153,7 @@ left_btn.addEventListener('click', ()=>{
 right_btn.addEventListener('click', ()=>{
     ChangeSlider('plus')
 })
-let num = 0
+let num = 1;
 
 
 function clearActive(){
@@ -152,12 +161,13 @@ function clearActive(){
     buttons_span.forEach(elem =>{
         if(elem.classList.contains('active')){
             elem.classList.remove('active')
-            slider_image.forEach(elem => elem.classList.remove('active'))
+           /* slider_image.forEach(elem => elem.classList.remove('active'))*/
         }
     })
 
 }
 
+const headerImageBlock = document.querySelector('.header-image');
 
 function ChangeSlider(numStatus){
     const buttons_span = document.querySelectorAll('.icon-item')
@@ -171,15 +181,21 @@ function ChangeSlider(numStatus){
     }
     clearActive()
     buttons_span[num].classList.add('active')
-    slider_image[num].classList.add('active')
+
+    headerImageBlock.style.backgroundImage = `url(${headerSliderArray[num]})`;
+    // slider_image[num].classList.add('active')
 
 }
 
 let plus = 'plus'
 
-setInterval(()=>{
+setTimeout(()=>{
     const buttons_span = document.querySelectorAll('.icon-item')
-
+    if(window.innerWidth <= 576){
+        num = null
+        buttons_span[0].classList.add('active');
+        return ;
+    }
     num++
     if(num >= buttons_span.length){
         num = 0
@@ -188,9 +204,10 @@ setInterval(()=>{
     }
     clearActive()
     buttons_span[num].classList.add('active')
-    slider_image[num].classList.add('active')
+    headerImageBlock.style.backgroundImage = `url(${headerSliderArray[num]})`;
+    // slider_image[num].classList.add('active')
 
-},2000)
+},4000)
 
 
 // text

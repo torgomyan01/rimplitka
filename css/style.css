@@ -686,16 +686,16 @@ header .header-coontainer .header-info {
   z-index: 5;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(3px);
-  padding: 190px 50px 150px 122px;
+  padding: 11.875rem 3.125rem 9.375rem 7.625rem;
 }
 @media (max-width: 768px) {
   header .header-coontainer .header-info {
-    padding: 165px 50px 150px 65px;
+    padding: 10.3125rem 3.125rem 9.375rem 4.0625rem;
   }
 }
 @media (max-width: 576px) {
   header .header-coontainer .header-info {
-    padding: 120px 20px 60px 20px;
+    padding: 7.5rem 1.25rem 3.75rem 1.25rem;
   }
 }
 @media (max-width: 576px) {
@@ -737,6 +737,12 @@ header .header-coontainer .header-info .btn-blue:hover {
 header .header-coontainer .header-image {
   height: 800px;
   position: relative;
+  width: 100%;
+  max-width: 928px;
+  transition: 0.3s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header .header-coontainer .header-image img {
   height: 800px !important;
@@ -828,15 +834,17 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons {
   height: 14px;
   cursor: pointer;
   border-radius: 50%;
-  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .header-coontainer .header-image .slider-icon .slider-buttons .icons:last-child {
   margin-right: 0;
 }
 header .header-coontainer .header-image .slider-icon .slider-buttons .icons .icon-item {
   border-radius: 50%;
-  width: 100%;
-  height: 100%;
+  width: 7px;
+  height: 7px;
   display: block;
   cursor: pointer;
 }
@@ -939,6 +947,11 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   margin-right: 1.5625rem;
   position: relative;
 }
+@media (max-width: 768px) {
+  .cards .cards-container .card .inner .image {
+    margin-bottom: 20px;
+  }
+}
 .cards .cards-container .card .inner .image:before {
   content: "";
   width: 100%;
@@ -948,6 +961,11 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   top: 10px;
   position: absolute;
   border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .cards .cards-container .card .inner .image:before {
+    width: 250px;
+  }
 }
 .cards .cards-container .card .inner .image img {
   position: relative;
