@@ -196,10 +196,11 @@ body {
   margin-bottom: 35px;
 }
 .modal-full-dialog .modal-full-content .modal-body-full .accordion .accordion-item {
-  border-radius: 3px !important;
+  border-radius: 10px !important;
   border: 1px solid rgba(0, 0, 0, 0.15) !important;
   background: #FFF !important;
   margin-bottom: 15px !important;
+  overflow: hidden;
 }
 .modal-full-dialog .modal-full-content .modal-body-full .accordion .accordion-item .accordion-header .accordion-button .btn-img {
   color: #323232;

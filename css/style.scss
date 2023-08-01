@@ -215,10 +215,11 @@ body {
       .accordion{
 
         .accordion-item{
-          border-radius: 3px !important;
+          border-radius: 10px !important;
           border: 1px solid rgba(0, 0, 0, 0.15) !important;
           background: #FFF !important;
           margin-bottom: 15px !important;
+          overflow: hidden;
 
           .accordion-header{
 
