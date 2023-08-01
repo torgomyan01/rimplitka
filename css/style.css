@@ -1578,6 +1578,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box:hover {
   background: #176B87;
   transform: scale(1.03);
+  border: 1px solid rgb(255, 255, 255);
 }
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box:hover .our-service-headingg {
   color: #fff !important;
