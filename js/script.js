@@ -156,7 +156,7 @@ left_btn.addEventListener('click', ()=>{
 right_btn.addEventListener('click', ()=>{
     ChangeSlider('plus')
 })
-let num = 1;
+let num = 0;
 
 
 function clearActive(){
@@ -192,7 +192,7 @@ function ChangeSlider(numStatus){
 
 let plus = 'plus'
 
-setTimeout(()=>{
+setInterval(()=>{
     const buttons_span = document.querySelectorAll('.icon-item')
     if(window.innerWidth <= 576){
         num = null
