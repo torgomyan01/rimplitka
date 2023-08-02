@@ -665,8 +665,10 @@ body {
     width: 100%;
   }
 }
-.menu-item-mobile .contact-block .btn-blue img {
-  margin-left: 10px;
+.menu-item-mobile .contact-block .btn-blue:hover {
+  border: 1px solid #FFF;
+  background: #176B87;
+  color: #fff;
 }
 
 header .header-coontainer {
@@ -728,11 +730,10 @@ header .header-coontainer .header-info .contact-block div i {
 header .header-coontainer .header-info .btn-blue {
   margin-top: 23px;
 }
-header .header-coontainer .header-info .btn-blue img {
-  margin-left: 10px;
-}
 header .header-coontainer .header-info .btn-blue:hover {
-  background: #33b3dc;
+  border: 1px solid #FFF;
+  background: #176B87;
+  color: #fff;
 }
 header .header-coontainer .header-image {
   height: 800px;
@@ -913,6 +914,13 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
     display: block;
   }
 }
+.cards .cards-container .cards-description #myBtn i {
+  position: relative;
+  top: 1px;
+}
+.cards .cards-container .cards-description #myBtn #myIcon-up {
+  top: 3px;
+}
 .cards .cards-container .cards-description #more {
   display: none;
 }
@@ -965,6 +973,11 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 @media (max-width: 768px) {
   .cards .cards-container .card .inner .image:before {
     width: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .cards .cards-container .card .inner .image:before {
+    width: 100%;
   }
 }
 .cards .cards-container .card .inner .image img {
@@ -1041,7 +1054,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 .cards .cards-container .card .inner .description .buttons .btn-card {
   color: #176B87;
   background: #fff;
-  transition: 0.3s;
+  transition: 0.3s all;
 }
 @media (max-width: 576px) {
   .cards .cards-container .card .inner .description .buttons .btn-card {
@@ -1228,14 +1241,8 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 
 .about {
   margin-top: 65px;
-  min-height: 50vh;
   position: relative;
   overflow: hidden;
-}
-@media (max-width: 576px) {
-  .about {
-    min-height: 75vh;
-  }
 }
 @media (max-width: 376px) {
   .about {
@@ -1258,7 +1265,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 }
 @media (max-width: 1024px) {
   .about .about-info {
-    padding: 95px 20px 0 20px;
+    padding: 72px 20px 0 20px;
   }
 }
 @media (max-width: 576px) {

@@ -84,6 +84,7 @@ const menu_mobile_btn = $('.menu-mobile-btn .btn-blue')
 
 menu_mobile_btn.on('click', function (){
     menuItemMobile.removeClass(active);
+    $(body).css('overflow', '')
 })
 
 
@@ -94,9 +95,11 @@ $('.mobile-menu-board').on('click', function (){
     if($(this).hasClass(active)){
         $(this).removeClass(active);
         menuItemMobile.removeClass(active);
+        $(body).css('overflow', '')
     } else {
         $(this).addClass(active);
         menuItemMobile.addClass(active);
+        $(body).css('overflow', 'hidden')
     }
 })
 
@@ -220,15 +223,17 @@ const btnText = document.getElementById("myBtn");
 
 function myFunction() {
     const title_mobile = document.querySelector('.title-mobile');
+    const myIconUp = document.querySelector('#myIcon-up')
+    const myIconDown = document.querySelector('#myIcon-down')
 
     if (dots.style.display === "none") {
         dots.style.display = "inline";
-        btnText.innerHTML = "Читать больше";
+        btnText.innerHTML = "Читать больше <i id=\"myIcon-down\" class=\"fa-solid fa-chevron-down ms-2\"></i>";
         moreText.style.display = "none";
         title_mobile.classList.add('text')
     } else {
         dots.style.display = "none";
-        btnText.innerHTML = "Читать меньше";
+        btnText.innerHTML = "Читать меньше <i id=\"myIcon-up\" class=\"fa-solid fa-chevron-up ms-2 \"></i>";
         moreText.style.display = "inline";
         title_mobile.classList.remove('text')
     }
@@ -240,8 +245,8 @@ function myFunction() {
 
 $('.slider').slick({
     dots: true,
-    lazyLoad: 'ondemand',
-    infinite: false,
+    lazyLoad: 'progressive',
+    infinite: true,
     speed: 300,
     slidesToShow: 5,
     slidesToScroll: 5,

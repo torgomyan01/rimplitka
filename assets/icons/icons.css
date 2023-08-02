@@ -81,6 +81,18 @@ content: "\f138"
     content: "\f077"
 }
 
+.fa-chevron-down:before{
+    content: "\f078"
+}
+
+.fa-calculator:before{
+    content: "\f1ec"
+}
+
+.fa-eye:before{
+    content: "\f06e"
+}
+
 
 
 
