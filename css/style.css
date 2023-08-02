@@ -711,6 +711,9 @@ header .header-coontainer .header-info .title-blue {
 header .header-coontainer .header-info .contact-block {
   margin-top: 23px;
 }
+header .header-coontainer .header-info .contact-block a {
+  color: #176B87;
+}
 header .header-coontainer .header-info .contact-block div {
   color: #176B87;
   font-size: 1.25rem;
