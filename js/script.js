@@ -14,29 +14,13 @@ const { mobileMenu, body, imageWidget } = {
     body: $('body'),
     imageWidget: $('.image-widget'),
 }
-
+//
 $('img[data-src]').Lazy({
+    effect : "fadeIn",
     beforeLoad: function(element) {
         $(element).removeAttr('width').removeAttr('height')
-    },
+    }
 });
-
-//
-// AOS.init()
-//
-// $('.mobile-menu-board').on('click', function (){
-//     const thisElem = $(this);
-//     if(thisElem.hasClass(active)){
-//         mobileMenu.removeClass(active)
-//         thisElem.removeClass(active)
-//         body.removeClass(hidden)
-//     } else {
-//         mobileMenu.addClass(active)
-//         thisElem.addClass(active)
-//         body.addClass(hidden)
-//     }
-// })
-
 
 
 
@@ -375,9 +359,7 @@ function openModalCategory(id){
     modalProducts.show();
     $('.modal-body-item').addClass('d-none');
     $(id).removeClass('d-none');
-    accordion_button.forEach((elem)=>{
-        elem.style.cssText ="display: inline !important"
-    })
+    setTimeout(() => $('.btn-img img').attr('style', 'display: inline-block !important'), 500)
 }
 
 

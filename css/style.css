@@ -1499,7 +1499,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 .payment {
   margin-top: 150px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .payment {
     margin-top: 75px;
   }
