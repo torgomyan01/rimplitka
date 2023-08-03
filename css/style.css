@@ -1577,6 +1577,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 @media (max-width: 768px) {
   .work-etaps .work-etaps-container .work-etaps-item {
     margin-right: 15px;
+    margin-bottom: 100px;
   }
 }
 .work-etaps .work-etaps-container .work-etaps-item .logo {
