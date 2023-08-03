@@ -1577,6 +1577,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 @media (max-width: 768px) {
   .work-etaps .work-etaps-container .work-etaps-item {
     margin-right: 15px;
+    margin-bottom: 100px;
   }
 }
 .work-etaps .work-etaps-container .work-etaps-item .logo {
@@ -1666,9 +1667,11 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 }
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box {
   width: 100%;
+  height: 100%;
   border: 1px solid rgba(23, 107, 135, 0.2);
   border-radius: 20px;
   transition: 0.3s;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .Our_all_services .container-Our_all_services .inner .Our_all_services-box {
@@ -1688,13 +1691,24 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 }
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box .image {
   width: 100%;
+  height: 215px;
 }
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box .image img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 0 15px;
+  height: calc(100% - 210px);
+}
+@media (max-width: 1024px) {
+  .Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok {
+    height: unset;
+  }
 }
 .Our_all_services .container-Our_all_services .inner .Our_all_services-box .text-blok .our-service-headingg {
   color: #323232;
