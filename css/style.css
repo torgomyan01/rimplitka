@@ -1121,7 +1121,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   padding: 0 110px;
   color: #000;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -1555,7 +1555,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 }
 @media (max-width: 768px) {
   .work-etaps .work-etaps-container {
-    padding: 0 30px;
+    padding: 0 15px;
   }
 }
 .work-etaps .work-etaps-container .heading {
@@ -1576,7 +1576,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 }
 @media (max-width: 768px) {
   .work-etaps .work-etaps-container .work-etaps-item {
-    margin-right: 15px;
+    margin-right: 7px;
     margin-bottom: 100px;
   }
 }
@@ -1656,6 +1656,11 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 @media (max-width: 768px) {
   .Our_all_services {
     margin-top: 90px;
+  }
+}
+@media (max-width: 576px) {
+  .Our_all_services {
+    margin-top: 4.6875rem;
   }
 }
 .Our_all_services .container-Our_all_services .heading {
