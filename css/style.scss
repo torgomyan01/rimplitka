@@ -1079,6 +1079,9 @@ header{
             font-size: 1.625rem;
             font-weight: 700;
             line-height: normal;
+            @media (max-width: 576px) {
+              font-size: 1.3rem;
+            }
           }
 
           p{
