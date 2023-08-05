@@ -1025,10 +1025,8 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
 .cards .cards-container .card .inner .description h2 {
   color: #FFF;
   font-size: 1.625rem;
-  font-style: normal;
   font-weight: 700;
   line-height: normal;
-  font-variant: all-small-caps;
 }
 .cards .cards-container .card .inner .description p {
   color: rgba(255, 255, 255, 0.72);
