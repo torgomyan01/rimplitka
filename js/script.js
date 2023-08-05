@@ -416,3 +416,41 @@ close_btn.forEach((btn)=>{
 
     })
 })
+
+
+
+// SEN CAL FORM
+
+$('#senCalc').on('submit', function (e){
+    e.preventDefault();
+    const data = $(this).serializeArray();
+
+
+    const formData = new FormData();
+
+    data.forEach((item) => {
+        formData.append(item.name, item.value);
+    })
+
+
+    // $.ajax({
+    //     url: "./send-calc.php",
+    //     method: "POST",
+    //     context: formData
+    // }).done(function(res) {
+    //     console.log(res)
+    // });
+
+    $.ajax({
+        url: "./send-calc.php", // указываем URL
+        method: "POST",            // HTTP метод, по умолчанию GET
+        data: data,         // данные, которые отправляем на сервер
+        success: function (data) {
+            console.log(data)
+        },
+        error: function (err){
+            console.log(err)
+        }
+    });
+
+})
