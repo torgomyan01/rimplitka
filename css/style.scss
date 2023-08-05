@@ -1114,11 +1114,12 @@ header{
               color: #176B87;
               background: #fff;
               transition: .3s all;
+              border: 1px solid #FFF;
               @media (max-width: 576px) {
                 width: 100%;
               }
               &:hover{
-                border: 1px solid #FFF;
+
                 background: #176B87;
                 color: #fff;
               }
