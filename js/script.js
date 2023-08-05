@@ -279,6 +279,7 @@ $(window).on('resize', function (){
             speed: 300,
             slidesToShow: 1,
             slidesToScroll: 1,
+            autoplaySpeed: 1000,
             adaptiveHeight: true
             // responsive: [
             //     {
