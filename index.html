@@ -383,14 +383,14 @@
           </p>
           <div class="inner">
 
-            <div class="form">
+            <form action="#" id="senCalc" class="form">
               <div class="input-box">
-                <h5>Площадь для укладки (м2)</h5>
-                <input type="number" placeholder="15">
+                <h5>Площадь для укладки (м2)*</h5>
+                <input type="number" placeholder="15" required name="areaForLaying">
               </div>
               <div class="input-box">
-                <h5>Тип основания:</h5>
-                <select name="base_type" id="base_type">
+                <h5>Тип основания *</h5>
+                <select id="base_type" required name="baseType">
                   <option value="base_type1">Готовое основание</option>
                   <option value="base_type2">бетонное основание</option>
                   <option value="base_type3">пешеходную зону</option>
@@ -398,17 +398,17 @@
                 </select>
               </div>
               <div class="input-box">
-                <h5>Ваше имя</h5>
-                <input type="email" placeholder="Иван Иванов">
+                <h5>Ваше имя *</h5>
+                <input type="text" placeholder="Иван Иванов" required name="name">
               </div>
               <div class="input-box">
-                <h5>Ваше телефон</h5>
-                <input type="number" placeholder="+7(___) ___-____">
+                <h5>Ваше телефон *</h5>
+                <input type="number" placeholder="+7(___) ___-____" required  name="phone">
               </div>
                   <div class="buttons">
-                <button role="button" class="btn-blue btn-form">Уточнить</button>
+                <button role="button" type="submit" class="btn-blue btn-form">Уточнить</button>
                   </div>
-            </div>
+            </form>
 
             <div class="image">
               <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP88+NHPQAJUQNtRPlnwgAAAABJRU5ErkJggg==" loading="lazy" data-src="assets/image/calculator-img.png" width="1" height="1" alt="calc">

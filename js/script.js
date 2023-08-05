@@ -288,6 +288,7 @@ $(window).on('resize', function (){
             speed: 300,
             slidesToShow: 1,
             slidesToScroll: 1,
+            autoplaySpeed: 1000,
             adaptiveHeight: true
             // responsive: [
             //     {
@@ -424,4 +425,42 @@ close_btn.forEach((btn)=>{
        window.location.hash = '#card'
 
     })
+})
+
+
+
+// SEN CAL FORM
+
+$('#senCalc').on('submit', function (e){
+    e.preventDefault();
+    const data = $(this).serializeArray();
+
+
+    const formData = new FormData();
+
+    data.forEach((item) => {
+        formData.append(item.name, item.value);
+    })
+
+
+    // $.ajax({
+    //     url: "./send-calc.php",
+    //     method: "POST",
+    //     context: formData
+    // }).done(function(res) {
+    //     console.log(res)
+    // });
+
+    $.ajax({
+        url: "./send-calc.php", // указываем URL
+        method: "POST",            // HTTP метод, по умолчанию GET
+        data: data,         // данные, которые отправляем на сервер
+        success: function (data) {
+            console.log(data)
+        },
+        error: function (err){
+            console.log(err)
+        }
+    });
+
 })
