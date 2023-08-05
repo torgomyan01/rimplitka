@@ -128,10 +128,20 @@ body {
 .modal-dialog-form {
   max-width: 867px;
 }
+@media (max-width: 576px) {
+  .modal-dialog-form {
+    height: 100%;
+  }
+}
 .modal-dialog-form .modal-form {
   width: 100%;
   padding: 0 0 40px 0;
   text-align: center;
+}
+@media (max-width: 576px) {
+  .modal-dialog-form .modal-form {
+    height: 90%;
+  }
 }
 .modal-dialog-form .modal-form .modal-header {
   border: none;
@@ -146,6 +156,11 @@ body {
   letter-spacing: 0.5px;
   margin-bottom: 10px;
 }
+@media (max-width: 576px) {
+  .modal-dialog-form .modal-form .modal-body-form .modal-form-heading {
+    font-size: 1.2rem;
+  }
+}
 .modal-dialog-form .modal-form .modal-body-form .modal-form-title {
   color: #000;
   text-align: center;
@@ -154,6 +169,11 @@ body {
   font-weight: 300;
   line-height: normal;
   letter-spacing: 0.4px;
+}
+@media (max-width: 576px) {
+  .modal-dialog-form .modal-form .modal-body-form .modal-form-title {
+    font-size: 1rem;
+  }
 }
 .modal-dialog-form .modal-form .modal-body-form .input-box {
   margin-bottom: 21px;

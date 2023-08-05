@@ -130,11 +130,16 @@ body {
 
 .modal-dialog-form {
     max-width: 867px;
-
+  @media (max-width: 576px) {
+    height: 100%;
+  }
   .modal-form {
     width: 100% ;
     padding: 0 0 40px 0;
     text-align: center;
+    @media (max-width: 576px) {
+      height: 90%;
+    }
     .modal-header {
       border: none;
     }
@@ -149,6 +154,9 @@ body {
         line-height: normal;
         letter-spacing: 0.5px;
         margin-bottom: 10px;
+        @media (max-width: 576px) {
+          font-size: 1.2rem;
+        }
       }
 
       .modal-form-title {
@@ -159,6 +167,9 @@ body {
         font-weight: 300;
         line-height: normal;
         letter-spacing: 0.4px;
+        @media (max-width: 576px) {
+          font-size: 1rem;
+        }
       }
 
       .input-box {
