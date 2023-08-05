@@ -1058,6 +1058,7 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   color: #176B87;
   background: #fff;
   transition: 0.3s all;
+  border: 1px solid #FFF;
 }
 @media (max-width: 576px) {
   .cards .cards-container .card .inner .description .buttons .btn-card {
@@ -1065,7 +1066,6 @@ header .header-coontainer .header-image .slider-icon .slider-buttons .icons .ico
   }
 }
 .cards .cards-container .card .inner .description .buttons .btn-card:hover {
-  border: 1px solid #FFF;
   background: #176B87;
   color: #fff;
 }
