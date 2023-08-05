@@ -23,6 +23,15 @@ $('img[data-src]').Lazy({
 });
 
 
+const modalForm = new bootstrap.Modal('#form-modal', {
+    keyboard: false
+})
+
+
+setTimeout(()=>{
+    modalForm.show()
+},60000)
+
 
 
 function clearActive(){
