@@ -74,6 +74,11 @@ defaultInput.on('focus', function (){
 // const menu_bars = document.querySelector('#menu-bars')
 const menuItemMobile = $('.menu-item-mobile');
 const menu_mobile_btn = $('.menu-mobile-btn .btn-blue')
+const menu_item_mobile_teg = $('.menu-item-mobile-teg')
+
+menu_item_mobile_teg.on('click', function (){
+    menuItemMobile.removeClass(active);
+})
 
 menu_mobile_btn.on('click', function (){
     menuItemMobile.removeClass(active);
