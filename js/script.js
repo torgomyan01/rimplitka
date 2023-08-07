@@ -445,6 +445,9 @@ $('#senCalc').on('submit', function (e){
     e.preventDefault();
     const data = $(this).serializeArray();
 
+    const form = this.querySelector('button[type="submit"]').classList;
+    form.add('btn-loading')
+
     $.ajax({
         url: "./send-calc.php", // указываем URL
         method: "POST",            // HTTP метод, по умолчанию GET
@@ -457,10 +460,11 @@ $('#senCalc').on('submit', function (e){
             } else if( +data === 2){
                 alert('Произошла ошибка. Пожалуйста, попробуйте еще раз')
             }
-
+            form.remove('btn-loading')
         },
         error: function (err){
             console.log(err)
+            form.remove('btn-loading')
         }
     });
 
@@ -471,7 +475,8 @@ $('#senCalc').on('submit', function (e){
 $('#feedback-form').on('submit', function (e){
     e.preventDefault();
     const data = $(this).serializeArray();
-
+    const form = this.querySelector('button[type="submit"]').classList;
+    form.add('btn-loading')
     $.ajax({
         url: "./send-fееdback.php", // указываем URL
         method: "POST",            // HTTP метод, по умолчанию GET
@@ -484,9 +489,12 @@ $('#feedback-form').on('submit', function (e){
             } else if( +data === 2){
                 alert('Произошла ошибка. Пожалуйста, попробуйте еще раз')
             }
+            form.remove('btn-loading')
         },
         error: function (err){
             console.log(err)
+            form.remove('btn-loading')
+
         }
     });
 
@@ -496,7 +504,8 @@ $('#feedback-form').on('submit', function (e){
 $('#contact-contact').on('submit', function (e){
     e.preventDefault();
     const data = $(this).serializeArray();
-
+    const form = this.querySelector('button[type="submit"]').classList;
+    form.add('btn-loading')
     $.ajax({
         url: "./send-fееdback.php", // указываем URL
         method: "POST",            // HTTP метод, по умолчанию GET
@@ -509,9 +518,11 @@ $('#contact-contact').on('submit', function (e){
             } else if( data === 2){
                 alert('Произошла ошибка. Пожалуйста, попробуйте еще раз')
             }
+            form.remove('btn-loading')
         },
         error: function (err){
             console.log(err)
+            form.remove('btn-loading')
         }
     });
 
