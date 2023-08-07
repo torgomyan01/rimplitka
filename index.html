@@ -391,10 +391,10 @@
               <div class="input-box">
                 <h5>Тип основания *</h5>
                 <select id="base_type" required name="baseType">
-                  <option value="base_type1">Готовое основание</option>
-                  <option value="base_type2">бетонное основание</option>
-                  <option value="base_type3">пешеходную зону</option>
-                  <option value="base_type3">парковку авто</option>
+                  <option value="Готовое основание">Готовое основание</option>
+                  <option value="бетонное основание">Бетонное основание</option>
+                  <option value="пешеходную зону">Пешеходную зону</option>
+                  <option value="парковку авто">Парковку авто</option>
                 </select>
               </div>
               <div class="input-box">
@@ -873,25 +873,23 @@
           <a href="mailto:contanct@rimplitka.ru">
             <span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP88+NHPQAJUQNtRPlnwgAAAABJRU5ErkJggg==" loading="lazy" data-src="assets/image/mail.svg" width="1" height="1" alt="phone">contanct@rimplitka.ru</span>
           </a>
-          <div class="inputbox">
+          <form action="#" method="post" class="inputbox" id="contact-contact">
             <h3 class="input-box-title">Заказать звонок</h3>
             <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <input type="text" class="form-control" id="floatingInput" name="name" placeholder="name@example.com">
               <label for="floatingInput">Ваше имя</label>
             </div>
             <div class="form-floating  mb-3">
-              <input type="number" class="form-control" id="floatingPassword" placeholder="Password">
+              <input type="number" class="form-control" id="floatingPassword" name="phone" placeholder="Password">
               <label for="floatingPassword">Ваш номер телефона</label>
 
             </div>
             <div class="buttons">
-              <button role="button" class="btn-blue">
+              <button role="button" type="submit" class="btn-blue">
                 Заказать
               </button>
             </div>
-
-
-          </div>
+          </form>
         </div>
 
     </div>
@@ -981,21 +979,7 @@
   </footer>
 
 
-  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-form">
-      <div class="modal-content modal-form">
-        <div class="modal-header">
-          <button role="button" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body modal-body-form">
-          <div>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP88+NHPQAJUQNtRPlnwgAAAABJRU5ErkJggg==" loading="lazy" data-src="assets/image/modal-check.png" width="1" height="1" alt="check">
-          <p>Спасибо, мы свяжемся с вами в ближайшее время</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 
   <div class="modal fade " id="form-modal" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-form">
@@ -1015,23 +999,23 @@
               решение ваших вопросов. Не откладывайте - получите ответ прямо сейчас!
             </p>
 
-            <div class="row justify-content-center align-items-center flex-column">
+            <form class="row justify-content-center align-items-center flex-column" action="#" method="post" id="feedback-form">
               <div class="col-12 col-md-6">
                 <label class="input-box">
                   <span>Ваше имя</span>
-                  <input type="text" placeholder="Иван Иванов">
+                  <input type="text" placeholder="Иван Иванов" name="name">
                 </label>
               </div>
               <div class="col-12 col-md-6">
                 <label class="input-box mb-0">
                   <span>Ваше телефон</span>
-                  <input type="number" placeholder="+7(___) ___-____">
+                  <input type="number" name="phone" placeholder="+7(___) ___-____">
                 </label>
               </div>
               <div class="col-12 col-md-6 mt-30 d-flex justify-content-center">
-                <button role="button" class="btn-blue w-100">Отправить</button>
+                <button role="button" type="submit" class="btn-blue w-100">Отправить</button>
               </div>
-            </div>
+            </form>
 
 
 
@@ -3207,10 +3191,21 @@
     </div>
   </div>
 
-
-  <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
-  <a class="btn btn-primary" data-bs-toggle="modal" href="#form-modal" role="button">Open form</a>
-
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-form">
+      <div class="modal-content modal-form">
+        <div class="modal-header">
+          <button role="button" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modal-body-form">
+          <div>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP88+NHPQAJUQNtRPlnwgAAAABJRU5ErkJggg==" loading="lazy" data-src="assets/image/modal-check.png" width="1" height="1" alt="check">
+            <p class="fs-20 fs-md-30">Спасибо, мы свяжемся с вами в ближайшее время</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <a href="tel:+7(985)0090660" class="btn btn-fix-call active">
