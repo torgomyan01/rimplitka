@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /
 
-Host: https://rimplitka.ru/
+Host: https://rimplitka.ru
 Sitemap: https://rimplitka.ru/sitemap.xml
